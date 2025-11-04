@@ -13,6 +13,11 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        display: ['Cinzel', 'serif'],
+        serif: ['Cormorant Garamond', 'serif'],
+        sans: ['Inter', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -114,10 +119,12 @@ export default {
       backgroundImage: {
         "gradient-hero": "var(--gradient-hero)",
         "gradient-card": "var(--gradient-card)",
+        "gradient-ornament": "var(--gradient-ornament)",
       },
       boxShadow: {
         elevated: "var(--shadow-elevated)",
         glow: "var(--shadow-glow)",
+        ornate: "var(--shadow-ornate)",
       },
     },
   },

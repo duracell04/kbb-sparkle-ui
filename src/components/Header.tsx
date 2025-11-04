@@ -11,8 +11,8 @@ const Header = () => {
               <span className="text-primary-foreground font-bold text-sm">KB</span>
             </div>
             <div>
-              <h1 className="text-lg font-bold text-foreground">KBB MVP</h1>
-              <p className="text-xs text-muted-foreground">Kartvelian Business Bonds</p>
+              <h1 className="text-lg font-display font-bold text-foreground">KBB MVP</h1>
+              <p className="text-xs font-serif text-muted-foreground">Kartvelian Business Bonds</p>
             </div>
           </div>
 
@@ -38,7 +38,7 @@ const Header = () => {
                 <span className="hidden sm:inline">GitHub</span>
               </a>
             </Button>
-            <Button size="sm" className="bg-accent hover:bg-accent/90 text-accent-foreground">
+            <Button size="sm" className="bg-accent hover:bg-accent/90 text-accent-foreground font-display shadow-glow">
               <FileText className="w-4 h-4 mr-2" />
               <span className="hidden sm:inline">Docs</span>
             </Button>

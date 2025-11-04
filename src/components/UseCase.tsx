@@ -12,36 +12,36 @@ const UseCase = () => {
                 Use Case: Georgian SMEs
               </div>
               
-              <h2 className="text-4xl md:text-5xl font-bold text-foreground">
+              <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground tracking-wide">
                 The KBB Story
               </h2>
               
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                <strong className="text-foreground">KBB = Kartvelian Business Bonds.</strong> A path for Georgian SMEs to access "<strong>Eurobond-like</strong>" financing sized for small/mid tickets.
+              <p className="text-lg font-serif text-muted-foreground leading-relaxed">
+                <strong className="text-foreground font-display">KBB = Kartvelian Business Bonds.</strong> A path for Georgian SMEs to access "<strong>Eurobond-like</strong>" financing sized for small/mid tickets.
               </p>
 
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-lg font-serif text-muted-foreground leading-relaxed">
                 Standardized terms, predictable servicing, and professional investors—with operational truth on <strong className="text-foreground">regulated cash rails</strong> and a tokenized <strong className="text-foreground">register & distribution</strong> layer for transparency and control.
               </p>
 
               <div className="grid grid-cols-2 gap-4 pt-4">
-                <Card className="p-4 bg-card border-border">
+                <Card className="p-4 bg-card border-2 border-border ornamental-border hover:shadow-ornate transition-all">
                   <TrendingUp className="w-8 h-8 text-accent mb-2" />
-                  <p className="text-sm font-medium text-foreground">Efficient Financing</p>
-                  <p className="text-xs text-muted-foreground mt-1">Cross-border credit routes</p>
+                  <p className="text-sm font-display font-medium text-foreground">Efficient Financing</p>
+                  <p className="text-xs font-serif text-muted-foreground mt-1">Cross-border credit routes</p>
                 </Card>
                 
-                <Card className="p-4 bg-card border-border">
+                <Card className="p-4 bg-card border-2 border-border ornamental-border hover:shadow-ornate transition-all">
                   <Users className="w-8 h-8 text-success mb-2" />
-                  <p className="text-sm font-medium text-foreground">Professional Investors</p>
-                  <p className="text-xs text-muted-foreground mt-1">Predictable coupons</p>
+                  <p className="text-sm font-display font-medium text-foreground">Professional Investors</p>
+                  <p className="text-xs font-serif text-muted-foreground mt-1">Predictable coupons</p>
                 </Card>
               </div>
             </div>
 
             <div className="space-y-6 animate-fade-in" style={{ animationDelay: '200ms' }}>
-              <Card className="p-8 bg-gradient-card border-border shadow-elevated">
-                <h3 className="text-xl font-semibold text-foreground mb-6">Who Benefits</h3>
+              <Card className="p-8 bg-gradient-card border-2 border-border shadow-ornate ornamental-border">
+                <h3 className="text-xl font-display font-semibold text-foreground mb-6">Who Benefits</h3>
                 
                 <div className="space-y-6">
                   <div className="flex gap-4">
@@ -51,8 +51,8 @@ const UseCase = () => {
                       </div>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-foreground mb-1">SMEs with Real Revenue</h4>
-                      <p className="text-sm text-muted-foreground">
+                      <h4 className="font-display font-semibold text-foreground mb-1">SMEs with Real Revenue</h4>
+                      <p className="text-sm font-serif text-muted-foreground">
                         Companies that lack efficient cross-border credit routes can access standardized financing.
                       </p>
                     </div>
@@ -65,8 +65,8 @@ const UseCase = () => {
                       </div>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-foreground mb-1">Professional Allocators</h4>
-                      <p className="text-sm text-muted-foreground">
+                      <h4 className="font-display font-semibold text-foreground mb-1">Professional Allocators</h4>
+                      <p className="text-sm font-serif text-muted-foreground">
                         Investors who want predictable coupons and audit-ready transaction trails.
                       </p>
                     </div>
@@ -79,8 +79,8 @@ const UseCase = () => {
                       </div>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-foreground mb-1">Operators & Transfer Agents</h4>
-                      <p className="text-sm text-muted-foreground">
+                      <h4 className="font-display font-semibold text-foreground mb-1">Operators & Transfer Agents</h4>
+                      <p className="text-sm font-serif text-muted-foreground">
                         Issuers who need DvP discipline and clean reconciliations for compliance.
                       </p>
                     </div>
@@ -88,9 +88,9 @@ const UseCase = () => {
                 </div>
               </Card>
 
-              <div className="p-6 bg-primary/5 border-2 border-primary/20 rounded-lg">
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  <strong className="text-foreground">Design principle:</strong> Cash settles on regulated rails. Tokens exist to register ownership, gate eligibility/lockups, and emit machine-readable lifecycle events keyed to the same references used by banking or stablecoin rails.
+              <div className="p-6 bg-primary/5 border-2 border-primary/20 rounded-lg ornamental-border">
+                <p className="text-sm font-serif text-muted-foreground leading-relaxed">
+                  <strong className="text-foreground font-display">Design principle:</strong> Cash settles on regulated rails. Tokens exist to register ownership, gate eligibility/lockups, and emit machine-readable lifecycle events keyed to the same references used by banking or stablecoin rails.
                 </p>
               </div>
             </div>

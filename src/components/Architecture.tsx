@@ -6,51 +6,51 @@ const Architecture = () => {
     <section className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+          <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4 tracking-wide">
             Architecture at a Glance
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-xl font-serif text-muted-foreground">
             Modular components designed for transparency and compliance
           </p>
         </div>
 
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            <Card className="p-6 bg-gradient-card border-border shadow-elevated text-center">
+            <Card className="p-6 bg-gradient-card border-2 border-border shadow-elevated text-center ornamental-border hover:shadow-ornate transition-all duration-300">
               <Database className="w-12 h-12 text-accent mx-auto mb-4" />
-              <h3 className="font-semibold text-foreground mb-2">Escrow / Rails</h3>
-              <p className="text-sm text-muted-foreground">
+              <h3 className="font-display font-semibold text-foreground mb-2">Escrow / Rails</h3>
+              <p className="text-sm font-serif text-muted-foreground">
                 Regulated institution or whitelisted stablecoin
               </p>
             </Card>
 
-            <Card className="p-6 bg-gradient-card border-border shadow-elevated text-center">
+            <Card className="p-6 bg-gradient-card border-2 border-border shadow-elevated text-center ornamental-border hover:shadow-ornate transition-all duration-300">
               <Shield className="w-12 h-12 text-success mx-auto mb-4" />
-              <h3 className="font-semibold text-foreground mb-2">Settlement Adapter</h3>
-              <p className="text-sm text-muted-foreground">
+              <h3 className="font-display font-semibold text-foreground mb-2">Settlement Adapter</h3>
+              <p className="text-sm font-serif text-muted-foreground">
                 Verify and attest settlement evidence
               </p>
             </Card>
 
-            <Card className="p-6 bg-gradient-card border-border shadow-elevated text-center">
+            <Card className="p-6 bg-gradient-card border-2 border-border shadow-elevated text-center ornamental-border hover:shadow-ornate transition-all duration-300">
               <Zap className="w-12 h-12 text-accent mx-auto mb-4" />
-              <h3 className="font-semibold text-foreground mb-2">DvP Orchestrator</h3>
-              <p className="text-sm text-muted-foreground">
+              <h3 className="font-display font-semibold text-foreground mb-2">DvP Orchestrator</h3>
+              <p className="text-sm font-serif text-muted-foreground">
                 Coordinate mint/transfer upon funding
               </p>
             </Card>
 
-            <Card className="p-6 bg-gradient-card border-border shadow-elevated text-center">
+            <Card className="p-6 bg-gradient-card border-2 border-border shadow-elevated text-center ornamental-border hover:shadow-ornate transition-all duration-300">
               <FileText className="w-12 h-12 text-success mx-auto mb-4" />
-              <h3 className="font-semibold text-foreground mb-2">FixedIncomeNote</h3>
-              <p className="text-sm text-muted-foreground">
+              <h3 className="font-display font-semibold text-foreground mb-2">FixedIncomeNote</h3>
+              <p className="text-sm font-serif text-muted-foreground">
                 Permissioned token with lifecycle events
               </p>
             </Card>
           </div>
 
-          <Card className="p-8 bg-card border-border shadow-elevated">
-            <h3 className="text-xl font-semibold text-foreground mb-6 flex items-center gap-2">
+          <Card className="p-8 bg-card border-2 border-border shadow-ornate ornamental-border">
+            <h3 className="text-xl font-display font-semibold text-foreground mb-6 flex items-center gap-2">
               <FileText className="w-6 h-6 text-accent" />
               Flow Diagram
             </h3>
@@ -135,9 +135,9 @@ const Architecture = () => {
               </div>
             </div>
 
-            <div className="mt-8 p-4 bg-secondary/50 rounded-lg">
-              <p className="text-sm text-muted-foreground">
-                <strong className="text-foreground">Core flows:</strong> Primary (DvP) for subscriptions, Servicing for coupons/redemptions—all with on-chain events containing <code className="text-accent">settlementRef</code> and <code className="text-accent">settlementNetwork</code> for deterministic reconciliation.
+            <div className="mt-8 p-4 bg-secondary/50 rounded-lg border border-border">
+              <p className="text-sm font-serif text-muted-foreground">
+                <strong className="text-foreground font-display">Core flows:</strong> Primary (DvP) for subscriptions, Servicing for coupons/redemptions—all with on-chain events containing <code className="text-accent font-mono">settlementRef</code> and <code className="text-accent font-mono">settlementNetwork</code> for deterministic reconciliation.
               </p>
             </div>
           </Card>

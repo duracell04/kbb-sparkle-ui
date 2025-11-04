@@ -9,37 +9,37 @@ const CTA = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary-foreground">
+          <h2 className="text-4xl md:text-5xl font-display font-bold text-primary-foreground tracking-wide">
             How to Collaborate
           </h2>
-          <p className="text-xl text-primary-foreground/80 max-w-2xl mx-auto">
+          <p className="text-xl font-serif text-primary-foreground/85 max-w-2xl mx-auto">
             Join us in building the future of tokenized private debt infrastructure
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8">
-            <Card className="p-6 bg-card/10 backdrop-blur-sm border border-primary-foreground/10 text-center hover:bg-card/20 transition-all">
+            <Card className="p-6 bg-card/10 backdrop-blur-sm border-2 border-primary-foreground/20 text-center hover:bg-card/20 transition-all ornamental-border hover:shadow-ornate">
               <Code2 className="w-10 h-10 text-accent mx-auto mb-4" />
-              <h3 className="text-lg font-semibold text-primary-foreground mb-2">Contribute a Slice</h3>
-              <p className="text-sm text-primary-foreground/70">Small PR + one test. Every contribution counts.</p>
+              <h3 className="text-lg font-display font-semibold text-primary-foreground mb-2">Contribute a Slice</h3>
+              <p className="text-sm font-serif text-primary-foreground/75">Small PR + one test. Every contribution counts.</p>
             </Card>
 
-            <Card className="p-6 bg-card/10 backdrop-blur-sm border border-primary-foreground/10 text-center hover:bg-card/20 transition-all">
+            <Card className="p-6 bg-card/10 backdrop-blur-sm border-2 border-primary-foreground/20 text-center hover:bg-card/20 transition-all ornamental-border hover:shadow-ornate">
               <FileText className="w-10 h-10 text-accent mx-auto mb-4" />
-              <h3 className="text-lg font-semibold text-primary-foreground mb-2">Add a Rail Adapter</h3>
-              <p className="text-sm text-primary-foreground/70">Parse evidence → produce settlement attestation.</p>
+              <h3 className="text-lg font-display font-semibold text-primary-foreground mb-2">Add a Rail Adapter</h3>
+              <p className="text-sm font-serif text-primary-foreground/75">Parse evidence → produce settlement attestation.</p>
             </Card>
 
-            <Card className="p-6 bg-card/10 backdrop-blur-sm border border-primary-foreground/10 text-center hover:bg-card/20 transition-all">
+            <Card className="p-6 bg-card/10 backdrop-blur-sm border-2 border-primary-foreground/20 text-center hover:bg-card/20 transition-all ornamental-border hover:shadow-ornate">
               <Users className="w-10 h-10 text-accent mx-auto mb-4" />
-              <h3 className="text-lg font-semibold text-primary-foreground mb-2">Challenge Mechanics</h3>
-              <p className="text-sm text-primary-foreground/70">Invariants, rounding, record dates, failure paths.</p>
+              <h3 className="text-lg font-display font-semibold text-primary-foreground mb-2">Challenge Mechanics</h3>
+              <p className="text-sm font-serif text-primary-foreground/75">Invariants, rounding, record dates, failure paths.</p>
             </Card>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
             <Button
               size="lg"
-              className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-8 shadow-glow"
+              className="bg-accent hover:bg-accent/90 text-accent-foreground font-display font-semibold px-8 shadow-ornate"
               asChild
             >
               <a href="https://github.com/duracell04/KBB_MVP" target="_blank" rel="noopener noreferrer">
@@ -50,7 +50,7 @@ const CTA = () => {
             <Button
               size="lg"
               variant="outline"
-              className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 backdrop-blur-sm"
+              className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 backdrop-blur-sm font-display"
             >
               <FileText className="w-5 h-5 mr-2" />
               Read Documentation
@@ -58,8 +58,8 @@ const CTA = () => {
           </div>
 
           <div className="pt-8 space-y-2">
-            <p className="text-sm text-primary-foreground/60">
-              See <code className="px-2 py-1 bg-primary-foreground/10 rounded text-primary-foreground">VISION.md</code> for intent and <code className="px-2 py-1 bg-primary-foreground/10 rounded text-primary-foreground">ROADMAP.md</code> for next checkpoints
+            <p className="text-sm font-serif text-primary-foreground/60">
+              See <code className="px-2 py-1 bg-primary-foreground/10 rounded text-primary-foreground font-mono">VISION.md</code> for intent and <code className="px-2 py-1 bg-primary-foreground/10 rounded text-primary-foreground font-mono">ROADMAP.md</code> for next checkpoints
             </p>
           </div>
         </div>

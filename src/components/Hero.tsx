@@ -13,47 +13,47 @@ const Hero = () => {
             Token-registered · Cash-settled · Regulated Rails
           </div>
           
-          <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground leading-tight">
+          <h1 className="text-5xl md:text-7xl font-display font-bold text-primary-foreground leading-tight tracking-wide">
             Private Debt,
             <br />
-            <span className="text-accent">Programmable & Auditable</span>
+            <span className="text-gradient">Programmable & Auditable</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-primary-foreground/80 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl font-serif text-primary-foreground/85 max-w-3xl mx-auto leading-relaxed">
             KBB makes fixed-income notes programmable with permissioned tokens while cash settles on <strong>regulated rails</strong>—no pretending payments are on-chain.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-            <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-8 shadow-glow">
+            <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-8 shadow-ornate font-display">
               Get Started
               <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
-            <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 backdrop-blur-sm">
+            <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 backdrop-blur-sm font-display">
               View Documentation
             </Button>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-12">
-            <div className="bg-card/10 backdrop-blur-sm border border-primary-foreground/10 rounded-lg p-6 text-left">
+            <div className="bg-card/10 backdrop-blur-sm border-2 border-accent/20 rounded-lg p-6 text-left ornamental-border hover:shadow-ornate transition-all duration-300">
               <Shield className="w-10 h-10 text-accent mb-4" />
-              <h3 className="text-lg font-semibold text-primary-foreground mb-2">DvP by Design</h3>
-              <p className="text-primary-foreground/70 text-sm">
+              <h3 className="text-lg font-display font-semibold text-primary-foreground mb-2">DvP by Design</h3>
+              <p className="text-primary-foreground/75 text-sm font-serif leading-relaxed">
                 Delivery-versus-Payment only. Mint or transfer after verified settlement evidence.
               </p>
             </div>
             
-            <div className="bg-card/10 backdrop-blur-sm border border-primary-foreground/10 rounded-lg p-6 text-left">
+            <div className="bg-card/10 backdrop-blur-sm border-2 border-accent/20 rounded-lg p-6 text-left ornamental-border hover:shadow-ornate transition-all duration-300">
               <FileCheck className="w-10 h-10 text-accent mb-4" />
-              <h3 className="text-lg font-semibold text-primary-foreground mb-2">Audit-Ready</h3>
-              <p className="text-primary-foreground/70 text-sm">
+              <h3 className="text-lg font-display font-semibold text-primary-foreground mb-2">Audit-Ready</h3>
+              <p className="text-primary-foreground/75 text-sm font-serif leading-relaxed">
                 On-chain events mirror banking identifiers for deterministic reconciliation.
               </p>
             </div>
             
-            <div className="bg-card/10 backdrop-blur-sm border border-primary-foreground/10 rounded-lg p-6 text-left">
+            <div className="bg-card/10 backdrop-blur-sm border-2 border-accent/20 rounded-lg p-6 text-left ornamental-border hover:shadow-ornate transition-all duration-300">
               <Coins className="w-10 h-10 text-accent mb-4" />
-              <h3 className="text-lg font-semibold text-primary-foreground mb-2">Permissioned Transfers</h3>
-              <p className="text-primary-foreground/70 text-sm">
+              <h3 className="text-lg font-display font-semibold text-primary-foreground mb-2">Permissioned Transfers</h3>
+              <p className="text-primary-foreground/75 text-sm font-serif leading-relaxed">
                 ERC-3643 compatible. Eligibility, lockups, and jurisdictions enforced at token layer.
               </p>
             </div>

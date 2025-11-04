@@ -45,10 +45,10 @@ const Features = () => {
     <section className="py-24 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+          <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4 tracking-wide">
             Why KBB MVP Matters
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-xl font-serif text-muted-foreground">
             Built for the real world. Professional-grade infrastructure for tokenized private debt.
           </p>
         </div>
@@ -57,7 +57,7 @@ const Features = () => {
           {features.map((feature, index) => (
             <Card
               key={index}
-              className="p-6 bg-card border-border shadow-elevated hover:shadow-glow transition-all duration-300 animate-fade-in"
+              className="p-6 bg-card border-2 border-border shadow-elevated hover:shadow-ornate transition-all duration-300 animate-fade-in ornamental-border"
               style={{ animationDelay: `${index * 75}ms` }}
             >
               <div className="space-y-4">
@@ -66,10 +66,10 @@ const Features = () => {
                     <feature.icon className="w-6 h-6" />
                   </div>
                   <div className="flex-1 space-y-2">
-                    <h3 className="text-lg font-semibold text-foreground">
+                    <h3 className="text-lg font-display font-semibold text-foreground">
                       {feature.title}
                     </h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
+                    <p className="text-sm font-serif text-muted-foreground leading-relaxed">
                       {feature.description}
                     </p>
                   </div>
@@ -79,11 +79,11 @@ const Features = () => {
           ))}
         </div>
 
-        <div className="max-w-4xl mx-auto mt-16 p-8 bg-primary/5 border-2 border-primary/20 rounded-lg">
-          <h3 className="text-2xl font-bold text-foreground mb-4 text-center">
+        <div className="max-w-4xl mx-auto mt-16 p-8 bg-primary/5 border-2 border-primary/20 rounded-lg ornamental-border shadow-ornate">
+          <h3 className="text-2xl font-display font-bold text-foreground mb-4 text-center">
             Design Principle
           </h3>
-          <p className="text-lg text-muted-foreground text-center leading-relaxed">
+          <p className="text-lg font-serif text-muted-foreground text-center leading-relaxed">
             <strong className="text-foreground">Cash settles on regulated rails.</strong> Tokens exist to <span className="text-accent font-semibold">register ownership</span>, <span className="text-success font-semibold">gate eligibility/lockups</span>, and <span className="text-accent font-semibold">emit machine-readable lifecycle events</span> keyed to the same references used by banking or stablecoin rails.
           </p>
         </div>
