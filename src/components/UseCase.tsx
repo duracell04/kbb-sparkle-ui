@@ -1,0 +1,104 @@
+import { Card } from "@/components/ui/card";
+import { Building2, TrendingUp, Users, Globe2 } from "lucide-react";
+
+const UseCase = () => {
+  return (
+    <section className="py-24 bg-muted/30">
+      <div className="container mx-auto px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6 animate-fade-in">
+              <div className="inline-block px-4 py-2 bg-accent/10 border border-accent/20 rounded-full text-accent text-sm font-medium">
+                Use Case: Georgian SMEs
+              </div>
+              
+              <h2 className="text-4xl md:text-5xl font-bold text-foreground">
+                The KBB Story
+              </h2>
+              
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                <strong className="text-foreground">KBB = Kartvelian Business Bonds.</strong> A path for Georgian SMEs to access "<strong>Eurobond-like</strong>" financing sized for small/mid tickets.
+              </p>
+
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Standardized terms, predictable servicing, and professional investors—with operational truth on <strong className="text-foreground">regulated cash rails</strong> and a tokenized <strong className="text-foreground">register & distribution</strong> layer for transparency and control.
+              </p>
+
+              <div className="grid grid-cols-2 gap-4 pt-4">
+                <Card className="p-4 bg-card border-border">
+                  <TrendingUp className="w-8 h-8 text-accent mb-2" />
+                  <p className="text-sm font-medium text-foreground">Efficient Financing</p>
+                  <p className="text-xs text-muted-foreground mt-1">Cross-border credit routes</p>
+                </Card>
+                
+                <Card className="p-4 bg-card border-border">
+                  <Users className="w-8 h-8 text-success mb-2" />
+                  <p className="text-sm font-medium text-foreground">Professional Investors</p>
+                  <p className="text-xs text-muted-foreground mt-1">Predictable coupons</p>
+                </Card>
+              </div>
+            </div>
+
+            <div className="space-y-6 animate-fade-in" style={{ animationDelay: '200ms' }}>
+              <Card className="p-8 bg-gradient-card border-border shadow-elevated">
+                <h3 className="text-xl font-semibold text-foreground mb-6">Who Benefits</h3>
+                
+                <div className="space-y-6">
+                  <div className="flex gap-4">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 rounded-full bg-accent/10 border-2 border-accent flex items-center justify-center">
+                        <Building2 className="w-6 h-6 text-accent" />
+                      </div>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-foreground mb-1">SMEs with Real Revenue</h4>
+                      <p className="text-sm text-muted-foreground">
+                        Companies that lack efficient cross-border credit routes can access standardized financing.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-4">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 rounded-full bg-success/10 border-2 border-success flex items-center justify-center">
+                        <Users className="w-6 h-6 text-success" />
+                      </div>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-foreground mb-1">Professional Allocators</h4>
+                      <p className="text-sm text-muted-foreground">
+                        Investors who want predictable coupons and audit-ready transaction trails.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-4">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 rounded-full bg-accent/10 border-2 border-accent flex items-center justify-center">
+                        <Globe2 className="w-6 h-6 text-accent" />
+                      </div>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-foreground mb-1">Operators & Transfer Agents</h4>
+                      <p className="text-sm text-muted-foreground">
+                        Issuers who need DvP discipline and clean reconciliations for compliance.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </Card>
+
+              <div className="p-6 bg-primary/5 border-2 border-primary/20 rounded-lg">
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  <strong className="text-foreground">Design principle:</strong> Cash settles on regulated rails. Tokens exist to register ownership, gate eligibility/lockups, and emit machine-readable lifecycle events keyed to the same references used by banking or stablecoin rails.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default UseCase;
