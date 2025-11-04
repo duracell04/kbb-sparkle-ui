@@ -8,26 +8,26 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 35 25% 98%;
-    --foreground: 350 35% 12%;
+    --background: 30 20% 97%;
+    --foreground: 15 30% 15%;
 
-    --card: 35 20% 99%;
-    --card-foreground: 350 35% 12%;
+    --card: 35 25% 98%;
+    --card-foreground: 15 30% 15%;
 
-    --popover: 35 20% 99%;
-    --popover-foreground: 350 35% 12%;
+    --popover: 35 25% 98%;
+    --popover-foreground: 15 30% 15%;
 
-    --primary: 350 65% 32%;
-    --primary-foreground: 35 40% 98%;
+    --primary: 355 45% 35%;
+    --primary-foreground: 35 30% 95%;
 
-    --secondary: 35 25% 92%;
-    --secondary-foreground: 350 35% 12%;
+    --secondary: 25 25% 88%;
+    --secondary-foreground: 15 30% 15%;
 
-    --muted: 35 20% 94%;
-    --muted-foreground: 350 15% 45%;
+    --muted: 30 15% 90%;
+    --muted-foreground: 20 12% 42%;
 
-    --accent: 40 85% 55%;
-    --accent-foreground: 350 35% 12%;
+    --accent: 30 55% 48%;
+    --accent-foreground: 35 30% 98%;
 
     --success: 145 65% 45%;
     --success-foreground: 0 0% 100%;
@@ -35,15 +35,15 @@ All colors MUST be HSL.
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 35 20% 88%;
-    --input: 35 20% 88%;
-    --ring: 350 65% 32%;
+    --border: 30 18% 86%;
+    --input: 30 18% 86%;
+    --ring: 355 45% 35%;
 
-    --gradient-hero: linear-gradient(135deg, hsl(350 65% 32%) 0%, hsl(350 55% 42%) 30%, hsl(40 75% 50%) 100%);
-    --gradient-card: linear-gradient(180deg, hsl(35 20% 99%) 0%, hsl(35 25% 96%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(355 50% 28%) 0%, hsl(15 45% 38%) 40%, hsl(30 60% 45%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(35 25% 98%) 0%, hsl(30 22% 95%) 100%);
     
-    --shadow-elevated: 0 4px 24px -2px hsl(350 35% 12% / 0.1);
-    --shadow-glow: 0 0 40px hsl(40 85% 55% / 0.2);
+    --shadow-elevated: 0 6px 28px -4px hsl(15 35% 20% / 0.12);
+    --shadow-glow: 0 0 50px hsl(30 55% 48% / 0.25);
 
     --radius: 0.5rem;
 
@@ -65,42 +65,42 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 350 30% 8%;
-    --foreground: 35 25% 96%;
+    --background: 15 25% 10%;
+    --foreground: 35 18% 92%;
 
-    --card: 350 25% 10%;
-    --card-foreground: 35 25% 96%;
+    --card: 20 22% 12%;
+    --card-foreground: 35 18% 92%;
 
-    --popover: 350 25% 10%;
-    --popover-foreground: 35 25% 96%;
+    --popover: 20 22% 12%;
+    --popover-foreground: 35 18% 92%;
 
-    --primary: 350 70% 55%;
-    --primary-foreground: 350 30% 8%;
+    --primary: 355 55% 52%;
+    --primary-foreground: 15 25% 10%;
 
-    --secondary: 350 20% 14%;
-    --secondary-foreground: 35 25% 96%;
+    --secondary: 20 18% 16%;
+    --secondary-foreground: 35 18% 92%;
 
-    --muted: 350 20% 16%;
-    --muted-foreground: 350 15% 60%;
+    --muted: 20 15% 18%;
+    --muted-foreground: 30 12% 58%;
 
-    --accent: 40 90% 60%;
-    --accent-foreground: 350 30% 8%;
+    --accent: 30 65% 55%;
+    --accent-foreground: 15 25% 10%;
 
     --success: 145 65% 50%;
-    --success-foreground: 350 30% 8%;
+    --success-foreground: 15 25% 10%;
 
     --destructive: 0 62.8% 50%;
-    --destructive-foreground: 35 25% 96%;
+    --destructive-foreground: 35 18% 92%;
 
-    --border: 350 20% 18%;
-    --input: 350 20% 18%;
-    --ring: 40 90% 60%;
+    --border: 20 18% 20%;
+    --input: 20 18% 20%;
+    --ring: 30 65% 55%;
 
-    --gradient-hero: linear-gradient(135deg, hsl(350 65% 22%) 0%, hsl(350 55% 32%) 30%, hsl(40 75% 40%) 100%);
-    --gradient-card: linear-gradient(180deg, hsl(350 25% 10%) 0%, hsl(350 25% 12%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(355 45% 22%) 0%, hsl(15 40% 28%) 40%, hsl(30 50% 35%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(20 22% 12%) 0%, hsl(20 20% 14%) 100%);
     
-    --shadow-elevated: 0 4px 24px -2px hsl(0 0% 0% / 0.5);
-    --shadow-glow: 0 0 40px hsl(40 90% 60% / 0.3);
+    --shadow-elevated: 0 6px 28px -4px hsl(0 0% 0% / 0.6);
+    --shadow-glow: 0 0 50px hsl(30 65% 45% / 0.35);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
