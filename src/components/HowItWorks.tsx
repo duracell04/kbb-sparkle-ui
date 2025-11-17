@@ -18,7 +18,7 @@ const HowItWorks = () => {
           <Card className="p-8 bg-card border border-border">
             <div className="space-y-6">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-md bg-accent/10 border border-accent flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 rounded-md bg-accent/10 border border-accent/30 flex items-center justify-center flex-shrink-0 transition-all hover:bg-accent/20 hover:border-accent/50">
                   <CheckCircle2 className="w-6 h-6 text-accent" />
                 </div>
                 <div>
@@ -32,8 +32,8 @@ const HowItWorks = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-md bg-success/10 border border-success flex items-center justify-center flex-shrink-0">
-                  <TrendingUp className="w-6 h-6 text-success" />
+                <div className="w-12 h-12 rounded-md bg-primary/5 border border-primary/20 flex items-center justify-center flex-shrink-0 transition-all hover:bg-primary/10 hover:border-primary/30">
+                  <TrendingUp className="w-6 h-6 text-primary" />
                 </div>
                 <div>
                   <h3 className="text-lg font-medium text-foreground mb-2">
@@ -46,7 +46,7 @@ const HowItWorks = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-md bg-accent/10 border border-accent flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 rounded-md bg-accent/10 border border-accent/30 flex items-center justify-center flex-shrink-0 transition-all hover:bg-accent/20 hover:border-accent/50">
                   <Target className="w-6 h-6 text-accent" />
                 </div>
                 <div>
@@ -61,19 +61,19 @@ const HowItWorks = () => {
             </div>
           </Card>
 
-          <Card className="p-8 bg-brand-700 text-white border border-brand-600 shadow-card">
+          <Card className="p-8 bg-primary text-primary-foreground border border-primary/80 shadow-lg">
             <h3 className="text-2xl font-semibold mb-6">The Impact</h3>
             <div className="space-y-6">
               <div>
                 <div className="text-4xl font-bold text-accent mb-2 tabular-nums">1%</div>
-                <p className="text-white/90 text-sm">
+                <p className="text-primary-foreground/90 text-sm">
                   Just 1% more foreign capital
                 </p>
               </div>
-              <div className="text-3xl font-bold text-white/60">=</div>
+              <div className="text-3xl font-bold text-primary-foreground/40">=</div>
               <div>
                 <div className="text-4xl font-bold text-accent mb-2 tabular-nums">$200M</div>
-                <p className="text-white/90 text-sm">
+                <p className="text-primary-foreground/90 text-sm">
                   Economic impact for Georgian businesses
                 </p>
               </div>

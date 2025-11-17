@@ -40,14 +40,14 @@ const MarketValidation = () => {
             {validations.map((validation, index) => (
               <Card
                 key={index}
-                className="p-8 bg-card border border-border text-center"
+                className="p-8 bg-card border border-border text-center shadow-card transition-all hover:shadow-lg hover:border-accent/30"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <Award className={`w-12 h-12 ${validation.color} mx-auto mb-4`} />
                 <h3 className="text-xl font-medium text-foreground mb-2">
                   {validation.name}
                 </h3>
-                <div className="text-3xl font-bold text-foreground mb-2 tabular-nums">
+                <div className={`text-3xl font-bold mb-2 tabular-nums ${validation.color}`}>
                   {validation.amount}
                 </div>
                 <p className="text-sm text-muted-foreground">
@@ -57,9 +57,9 @@ const MarketValidation = () => {
             ))}
           </div>
 
-          <Card className="p-8 bg-card border-l-4 border-l-info border-t border-r border-b border-border text-center shadow-card">
+          <Card className="p-8 bg-card border-l-4 border-l-accent border-t border-r border-b border-border text-center shadow-lg">
             <div className="flex items-center justify-center gap-3 mb-4">
-              <CheckCircle2 className="w-8 h-8 text-info" />
+              <CheckCircle2 className="w-8 h-8 text-accent" />
               <h3 className="text-2xl font-semibold text-foreground">First-Mover Opportunity</h3>
             </div>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
