@@ -11,7 +11,7 @@ const CTA = () => {
             How to Collaborate
           </h2>
           <p className="text-lg text-white/90 max-w-2xl mx-auto">
-            Join us in building the future of tokenized private debt infrastructure
+            Contribute to building professional private debt infrastructure on regulated rails
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8">

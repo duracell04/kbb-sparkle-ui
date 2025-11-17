@@ -17,24 +17,28 @@ const UseCase = () => {
               </h2>
               
               <p className="text-base text-muted-foreground leading-relaxed">
-                <strong className="text-foreground font-medium">KBB = Kartvelian Business Bonds.</strong> A path for Georgian SMEs to access "<strong>Eurobond-like</strong>" financing sized for small/mid tickets.
+                <strong className="text-foreground font-medium">KBB = Kartvelian Business Bonds.</strong> A path for Georgian SMEs to access professional private debt financing.
               </p>
 
               <p className="text-base text-muted-foreground leading-relaxed">
-                Standardized terms, predictable servicing, and professional investors—with operational truth on <strong className="text-foreground">regulated cash rails</strong> and a tokenized <strong className="text-foreground">register & distribution</strong> layer for transparency and control.
+                Standardized notes, predictable servicing, and cross-border professional capital. Diaspora professionals can participate via familiar rails.
+              </p>
+
+              <p className="text-base text-muted-foreground leading-relaxed">
+                <strong className="text-foreground">Lower cost of capital:</strong> More professional investors can participate with confidence (strong controls and clean data). More competition → better pricing for Georgian issuers.
               </p>
 
               <div className="grid grid-cols-2 gap-4 pt-4">
                 <Card className="p-4 bg-card border border-border">
                   <TrendingUp className="w-8 h-8 text-accent mb-2" />
-                  <p className="text-sm font-medium text-foreground">Efficient Financing</p>
-                  <p className="text-xs text-muted-foreground mt-1">Cross-border credit routes</p>
+                  <p className="text-sm font-medium text-foreground">Lower Cost of Capital</p>
+                  <p className="text-xs text-muted-foreground mt-1">More investors, better pricing</p>
                 </Card>
                 
                 <Card className="p-4 bg-card border border-border">
                   <Users className="w-8 h-8 text-success mb-2" />
-                  <p className="text-sm font-medium text-foreground">Professional Investors</p>
-                  <p className="text-xs text-muted-foreground mt-1">Predictable coupons</p>
+                  <p className="text-sm font-medium text-foreground">Diaspora Channel</p>
+                  <p className="text-xs text-muted-foreground mt-1">Georgians abroad can invest</p>
                 </Card>
               </div>
             </div>
@@ -51,9 +55,9 @@ const UseCase = () => {
                       </div>
                     </div>
                     <div>
-                      <h4 className="font-medium text-foreground mb-1">SMEs with Real Revenue</h4>
+                      <h4 className="font-medium text-foreground mb-1">Georgian SMEs</h4>
                       <p className="text-sm text-muted-foreground">
-                        Companies that lack efficient cross-border credit routes can access standardized financing.
+                        Access to professional capital at competitive rates through standardized note structures.
                       </p>
                     </div>
                   </div>
@@ -65,9 +69,9 @@ const UseCase = () => {
                       </div>
                     </div>
                     <div>
-                      <h4 className="font-medium text-foreground mb-1">Professional Allocators</h4>
+                      <h4 className="font-medium text-foreground mb-1">Professional Investors</h4>
                       <p className="text-sm text-muted-foreground">
-                        Investors who want predictable coupons and audit-ready transaction trails.
+                        Qualified investors want predictable coupons, disciplined DvP, and clean audit trails.
                       </p>
                     </div>
                   </div>
