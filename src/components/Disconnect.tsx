@@ -10,7 +10,7 @@ const Disconnect = () => {
             The Disconnect
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            High-growth economies like Georgia offer 15-20% returns, yet proven profitable businesses can't access international markets. Current systems block natural capital flow.
+            High-growth economies like Georgia (7-11% GDP growth) have hundreds of profitable SMEs that cannot access international capital. Current systems block natural capital flow.
           </p>
         </div>
 
