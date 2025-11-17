@@ -1,5 +1,12 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Shield, FileCheck, Coins } from "lucide-react";
+import { ArrowRight, Shield, FileCheck, Coins, Info } from "lucide-react";
+import { Link } from "react-router-dom";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 const Hero = () => {
   return (
@@ -34,20 +41,62 @@ const Hero = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-12">
             <div className="text-center p-6 rounded-lg bg-white border border-[#E5E7EB] shadow-sm transition-all hover:shadow-md">
-              <div className="text-5xl font-bold text-[#F59E0B] mb-2 tabular-nums">$50B+</div>
+              <div className="flex items-center justify-center gap-2 mb-2">
+                <div className="text-5xl font-bold text-[#F59E0B] tabular-nums">$50B+</div>
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <Link to="/resources#global-msme" className="text-[#F59E0B] hover:text-[#D97706] transition-colors">
+                        <Info className="w-4 h-4" />
+                      </Link>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p className="text-xs">Source: IFC MSME Finance Gap</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+              </div>
               <p className="text-[#0D232D] text-base font-medium mb-1">Global capital seeking yields</p>
               <p className="text-[#4B5563] text-sm">Institutional investors looking for emerging markets</p>
             </div>
 
             <div className="text-center p-6 rounded-lg bg-white border border-[#E5E7EB] shadow-sm transition-all hover:shadow-md">
-              <div className="text-5xl font-bold text-[#F59E0B] mb-2 tabular-nums">500+</div>
+              <div className="flex items-center justify-center gap-2 mb-2">
+                <div className="text-5xl font-bold text-[#F59E0B] tabular-nums">500+</div>
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <Link to="/resources#georgia-sme-finance" className="text-[#F59E0B] hover:text-[#D97706] transition-colors">
+                        <Info className="w-4 h-4" />
+                      </Link>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p className="text-xs">Source: World Bank FSAP</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+              </div>
               <p className="text-[#0D232D] text-base font-medium mb-1">Georgian SMEs need capital</p>
               <p className="text-[#4B5563] text-sm">Proven businesses unable to access global markets</p>
             </div>
 
             <div className="text-center p-6 rounded-lg bg-white border border-[#E5E7EB] shadow-sm transition-all hover:shadow-md">
-              <div className="text-5xl font-bold text-[#F59E0B] mb-2 tabular-nums">7-11%</div>
-              <p className="text-[#0D232D] text-base font-medium mb-1">Annual GDP growth</p>
+              <div className="flex items-center justify-center gap-2 mb-2">
+                <div className="text-5xl font-bold text-[#F59E0B] tabular-nums">9.4%</div>
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <Link to="/resources#georgia-economy" className="text-[#F59E0B] hover:text-[#D97706] transition-colors">
+                        <Info className="w-4 h-4" />
+                      </Link>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p className="text-xs">Source: Geostat 2024</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+              </div>
+              <p className="text-[#0D232D] text-base font-medium mb-1">2024 GDP growth</p>
               <p className="text-[#4B5563] text-sm">High-growth economy demands capital infrastructure</p>
             </div>
           </div>

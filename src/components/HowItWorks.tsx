@@ -1,5 +1,12 @@
 import { Card } from "@/components/ui/card";
-import { CheckCircle2, TrendingUp, Target } from "lucide-react";
+import { CheckCircle2, TrendingUp, Target, Info } from "lucide-react";
+import { Link } from "react-router-dom";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 const HowItWorks = () => {
   return (
@@ -36,11 +43,25 @@ const HowItWorks = () => {
                   <TrendingUp className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-medium text-foreground mb-2">
-                    High Growth Economy
-                  </h3>
+                  <div className="flex items-center gap-2 mb-2">
+                    <h3 className="text-lg font-medium text-foreground">
+                      High Growth Economy
+                    </h3>
+                    <TooltipProvider>
+                      <Tooltip>
+                        <TooltipTrigger asChild>
+                          <Link to="/resources#georgia-economy" className="text-accent hover:text-accent/80 transition-colors">
+                            <Info className="w-4 h-4" />
+                          </Link>
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p className="text-xs">Source: Geostat 2024-2025</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </div>
                   <p className="text-sm text-muted-foreground">
-                    7-11% GDP growth demands capital infrastructure
+                    9.4% GDP growth in 2024, 9.8% in Q1 2025 demands capital infrastructure
                   </p>
                 </div>
               </div>
@@ -50,11 +71,25 @@ const HowItWorks = () => {
                   <Target className="w-6 h-6 text-accent" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-medium text-foreground mb-2">
-                    Perfect Scale
-                  </h3>
+                  <div className="flex items-center gap-2 mb-2">
+                    <h3 className="text-lg font-medium text-foreground">
+                      Perfect Scale
+                    </h3>
+                    <TooltipProvider>
+                      <Tooltip>
+                        <TooltipTrigger asChild>
+                          <Link to="/resources#georgia-economy" className="text-accent hover:text-accent/80 transition-colors">
+                            <Info className="w-4 h-4" />
+                          </Link>
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p className="text-xs">Source: World Bank & Geostat</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </div>
                   <p className="text-sm text-muted-foreground">
-                    Small enough to prove model ($30B+ GDP), large enough to matter globally
+                    Small enough to prove model ($33-34B GDP), large enough to matter globally
                   </p>
                 </div>
               </div>
@@ -62,7 +97,21 @@ const HowItWorks = () => {
           </Card>
 
           <Card className="p-8 bg-primary text-primary-foreground border border-primary/80 shadow-lg">
-            <h3 className="text-2xl font-semibold mb-6">The Impact</h3>
+            <div className="flex items-center gap-2 mb-6">
+              <h3 className="text-2xl font-semibold">The Impact</h3>
+              <TooltipProvider>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <Link to="/resources#georgia-sme-finance" className="text-accent hover:text-accent/80 transition-colors">
+                      <Info className="w-4 h-4" />
+                    </Link>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p className="text-xs">Source: World Bank FSAP & IFC</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+            </div>
             <div className="space-y-6">
               <div>
                 <div className="text-4xl font-bold text-accent mb-2 tabular-nums">1%</div>
