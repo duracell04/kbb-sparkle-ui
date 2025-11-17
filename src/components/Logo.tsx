@@ -52,25 +52,37 @@ const Logo = ({
         className="flex-shrink-0"
       >
         {/* Trunk - central vertical line */}
-        <rect x="15" y="8" width="2" height="18" fill={tree} />
+        <rect x="15" y="6" width="2" height="20" fill={tree} />
         
-        {/* Branch tier 1 (top) */}
-        <rect x="11" y="12" width="10" height="1.5" fill={tree} />
-        <rect x="10" y="12" width="2" height="2" fill={nodes} />
-        <rect x="20" y="12" width="2" height="2" fill={nodes} />
+        {/* Branch tier 1 (top) - short horizontal + tall vertical shoots */}
+        <rect x="13" y="10" width="3" height="1.5" fill={tree} />
+        <rect x="16" y="10" width="3" height="1.5" fill={tree} />
+        <rect x="12" y="8" width="1.5" height="3" fill={tree} />
+        <rect x="18.5" y="8" width="1.5" height="3" fill={tree} />
+        <rect x="11" y="7" width="2" height="2" fill={nodes} />
+        <rect x="19" y="7" width="2" height="2" fill={nodes} />
         
-        {/* Branch tier 2 */}
-        <rect x="9" y="16" width="14" height="1.5" fill={tree} />
-        <rect x="8" y="16" width="2" height="2" fill={nodes} />
-        <rect x="22" y="16" width="2" height="2" fill={nodes} />
+        {/* Branch tier 2 - horizontal + upward turn */}
+        <rect x="11" y="14" width="5" height="1.5" fill={tree} />
+        <rect x="16" y="14" width="5" height="1.5" fill={tree} />
+        <rect x="10" y="12" width="1.5" height="3" fill={tree} />
+        <rect x="20.5" y="12" width="1.5" height="3" fill={tree} />
+        <rect x="9" y="11" width="2" height="2" fill={nodes} />
+        <rect x="21" y="11" width="2" height="2" fill={nodes} />
         
-        {/* Branch tier 3 */}
-        <rect x="11" y="20" width="10" height="1.5" fill={tree} />
-        <rect x="10" y="20" width="2" height="2" fill={nodes} />
-        <rect x="20" y="20" width="2" height="2" fill={nodes} />
+        {/* Branch tier 3 - longer horizontal + upward turn */}
+        <rect x="9" y="18" width="7" height="1.5" fill={tree} />
+        <rect x="16" y="18" width="7" height="1.5" fill={tree} />
+        <rect x="8" y="16" width="1.5" height="3" fill={tree} />
+        <rect x="22.5" y="16" width="1.5" height="3" fill={tree} />
+        <rect x="7" y="15" width="2" height="2" fill={nodes} />
+        <rect x="23" y="15" width="2" height="2" fill={nodes} />
         
-        {/* Branch tier 4 (bottom) */}
-        <rect x="13" y="24" width="6" height="1.5" fill={tree} />
+        {/* Branch tier 4 (bottom) - widest, shorter vertical */}
+        <rect x="7" y="22" width="9" height="1.5" fill={tree} />
+        <rect x="16" y="22" width="9" height="1.5" fill={tree} />
+        <rect x="6" y="21" width="1.5" height="2" fill={tree} />
+        <rect x="24.5" y="21" width="1.5" height="2" fill={tree} />
       </svg>
       
       {/* Wordmark */}
