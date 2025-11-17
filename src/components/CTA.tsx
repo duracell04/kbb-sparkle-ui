@@ -7,10 +7,10 @@ const CTA = () => {
     <section className="py-24 bg-gradient-to-b from-muted/30 to-background relative overflow-hidden border-t border-border">
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-sans font-semibold text-primary">
+          <h2 className="text-4xl md:text-5xl font-sans font-semibold text-[#0D232D]">
             Ready to Build the Future of Georgian Finance?
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-[#4B5563] max-w-2xl mx-auto">
             Join us in unlocking dormant capital and transforming SME financing in Georgia
           </p>
 
@@ -37,8 +37,9 @@ const CTA = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
             <Button
               size="lg"
-              variant="amber"
+              variant="default"
               asChild
+              className="bg-[#0D232D] text-white hover:bg-[#0A1B24]"
             >
               <a href="https://github.com/duracell04/KBB_MVP" target="_blank" rel="noopener noreferrer">
                 <Github className="w-5 h-5 mr-2" />
@@ -48,6 +49,7 @@ const CTA = () => {
             <Button
               size="lg"
               variant="outline"
+              className="border-[#0D232D] text-[#0D232D] bg-white hover:bg-neutral-100"
             >
               <FileText className="w-5 h-5 mr-2" />
               Read Documentation

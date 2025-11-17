@@ -13,25 +13,25 @@ const Header = () => {
           </Link>
 
           <nav className="hidden md:flex items-center gap-8">
-            <a href="/#features" className="text-sm font-medium text-muted-foreground hover:text-brand-700 transition-colors">
+            <a href="/#features" className="text-sm font-medium text-[#0D232D] hover:text-[#0A1B24] transition-colors">
               Vision
             </a>
-            <a href="/#how-it-works" className="text-sm font-medium text-muted-foreground hover:text-brand-700 transition-colors">
+            <a href="/#how-it-works" className="text-sm font-medium text-[#0D232D] hover:text-[#0A1B24] transition-colors">
               Why Georgia
             </a>
-            <Link to="/issuer-workflow" className="text-sm font-medium text-muted-foreground hover:text-brand-700 transition-colors">
+            <Link to="/issuer-workflow" className="text-sm font-medium text-[#0D232D] hover:text-[#0A1B24] transition-colors">
               Issuer Demo
             </Link>
           </nav>
 
           <div className="flex items-center gap-3">
-            <Button variant="ghost" size="sm" asChild className="text-muted-foreground hover:text-brand-700">
+            <Button variant="ghost" size="sm" asChild className="text-[#0D232D] hover:text-[#0A1B24] hover:bg-neutral-100">
               <a href="https://github.com/duracell04/KBB_MVP" target="_blank" rel="noopener noreferrer">
                 <Github className="w-4 h-4 mr-2" />
                 <span className="hidden sm:inline">GitHub</span>
               </a>
             </Button>
-            <Button size="sm" variant="amber" asChild>
+            <Button size="sm" variant="default" asChild className="bg-[#0D232D] text-white hover:bg-[#0A1B24]">
               <Link to="/documentation">
                 <FileText className="w-4 h-4 mr-2" />
                 <span className="hidden sm:inline">Docs</span>
