@@ -8,10 +8,10 @@ const CTA = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-sans font-semibold text-white">
-            How to Collaborate
+            Ready to Build the Future of Georgian Finance?
           </h2>
           <p className="text-lg text-white/90 max-w-2xl mx-auto">
-            Contribute to building professional private debt infrastructure on regulated rails
+            Join us in unlocking dormant capital and transforming SME financing in Georgia
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8">
@@ -57,7 +57,7 @@ const CTA = () => {
 
           <div className="pt-8 space-y-2">
             <p className="text-sm text-white/70">
-              See <code className="px-2 py-1 bg-white/10 rounded text-white font-mono">VISION.md</code> for intent and <code className="px-2 py-1 bg-white/10 rounded text-white font-mono">ROADMAP.md</code> for next checkpoints
+              Kartvelian Business Bonds | Led by Andro Kasrashvili, AKALabs | Building Financial Infrastructure for Georgia's Future
             </p>
           </div>
         </div>

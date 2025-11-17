@@ -1,9 +1,11 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import HowItWorks from "@/components/HowItWorks";
+import Disconnect from "@/components/Disconnect";
 import Features from "@/components/Features";
-import Architecture from "@/components/Architecture";
-import UseCase from "@/components/UseCase";
+import HowItWorks from "@/components/HowItWorks";
+import Mechanism from "@/components/Mechanism";
+import MarketValidation from "@/components/MarketValidation";
+import SuccessRoadmap from "@/components/SuccessRoadmap";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 
@@ -13,18 +15,16 @@ const Index = () => {
       <Header />
       <main className="pt-16">
         <Hero />
-        <div id="how-it-works">
-          <HowItWorks />
-        </div>
+        <Disconnect />
         <div id="features">
           <Features />
         </div>
-        <div id="architecture">
-          <Architecture />
+        <div id="how-it-works">
+          <HowItWorks />
         </div>
-        <div id="use-case">
-          <UseCase />
-        </div>
+        <Mechanism />
+        <MarketValidation />
+        <SuccessRoadmap />
         <CTA />
       </main>
       <Footer />
