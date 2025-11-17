@@ -31,9 +31,11 @@ const Header = () => {
                 <span className="hidden sm:inline">GitHub</span>
               </a>
             </Button>
-            <Button size="sm" variant="amber">
-              <FileText className="w-4 h-4 mr-2" />
-              <span className="hidden sm:inline">Docs</span>
+            <Button size="sm" variant="amber" asChild>
+              <Link to="/documentation">
+                <FileText className="w-4 h-4 mr-2" />
+                <span className="hidden sm:inline">Docs</span>
+              </Link>
             </Button>
           </div>
         </div>
