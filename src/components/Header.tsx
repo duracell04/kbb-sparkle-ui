@@ -36,7 +36,7 @@ const Header = () => {
                 <span className="hidden sm:inline">GitHub</span>
               </a>
             </Button>
-            <Button size="sm" className="bg-accent hover:bg-accent/90 text-white font-medium">
+            <Button size="sm" className="bg-brand-700 hover:bg-brand-800 text-white font-medium">
               <FileText className="w-4 h-4 mr-2" />
               <span className="hidden sm:inline">Docs</span>
             </Button>

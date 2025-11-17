@@ -74,12 +74,12 @@ const SuccessRoadmap = () => {
             </Card>
           </div>
 
-          <Card className="p-8 bg-primary text-white">
+          <Card className="p-8 bg-card border-l-4 border-l-success border-t border-r border-b border-border shadow-card">
             <div className="flex items-start gap-4">
-              <Target className="w-8 h-8 text-accent flex-shrink-0 mt-1" />
+              <Target className="w-8 h-8 text-success flex-shrink-0 mt-1" />
               <div>
-                <h3 className="text-2xl font-semibold mb-4">Real Success</h3>
-                <p className="text-lg text-white/90 leading-relaxed">
+                <h3 className="text-2xl font-semibold text-foreground mb-4">Real Success</h3>
+                <p className="text-lg text-muted-foreground leading-relaxed">
                   When Georgian business growth isn't capital constrained. When entrepreneurs can focus on building great companies instead of searching for funding.
                 </p>
               </div>

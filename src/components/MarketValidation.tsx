@@ -57,12 +57,12 @@ const MarketValidation = () => {
             ))}
           </div>
 
-          <Card className="p-8 bg-primary text-white text-center">
+          <Card className="p-8 bg-card border-l-4 border-l-info border-t border-r border-b border-border text-center shadow-card">
             <div className="flex items-center justify-center gap-3 mb-4">
-              <CheckCircle2 className="w-8 h-8 text-accent" />
-              <h3 className="text-2xl font-semibold">First-Mover Opportunity</h3>
+              <CheckCircle2 className="w-8 h-8 text-info" />
+              <h3 className="text-2xl font-semibold text-foreground">First-Mover Opportunity</h3>
             </div>
-            <p className="text-lg text-white/90 max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Nobody's focused on Georgia. We have the chance to be the first to unlock this market and set the standard for emerging economy SME financing.
             </p>
           </Card>
