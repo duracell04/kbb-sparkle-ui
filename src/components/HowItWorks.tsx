@@ -5,26 +5,26 @@ const HowItWorks = () => {
   const steps = [
     {
       icon: Wallet,
-      title: "Investor Subscribes",
-      description: "Eligible investor funds on supported rail (escrow, SWIFT, SEPA, or whitelisted stablecoin)",
+      title: "Subscribe",
+      description: "Eligible investor (e.g., Georgian professional abroad) decides to invest.",
       highlight: "Subscribe",
     },
     {
       icon: CheckCircle2,
-      title: "Settlement Evidence",
-      description: "Settlement adapter receives and verifies proof (amount, currency, valueDate, settlementRef)",
-      highlight: "Verify",
+      title: "Fund",
+      description: "Money sent to escrow at licensed bank via SWIFT/SEPA/ACH/FPS. Or approved stablecoin from whitelisted wallet.",
+      highlight: "Fund",
     },
     {
       icon: FileText,
-      title: "DvP Orchestration",
-      description: "Orchestrator attests funding and triggers smart contract execution",
-      highlight: "Attest",
+      title: "Verify",
+      description: "KBB receives proof of cleared funds (ISO 20022 message or payment reference). Settlement evidence validated.",
+      highlight: "Verify",
     },
     {
       icon: Coins,
-      title: "Token Minted",
-      description: "FixedIncomeNote minted/transferred with on-chain event including settlementRef",
+      title: "Settle",
+      description: "After verification, note issued/transferred to investor (DvP). Token register updated with on-chain event storing bank reference.",
       highlight: "Settle",
     },
   ];
@@ -37,7 +37,7 @@ const HowItWorks = () => {
             How It Works
           </h2>
           <p className="text-lg text-muted-foreground">
-            A rail-agnostic DvP flow where cash settles on regulated infrastructure
+            Simple rule: No verified funds → No token delivery. Money stays in banks; the token is a register & reporting tool.
           </p>
         </div>
 

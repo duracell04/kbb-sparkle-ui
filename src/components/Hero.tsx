@@ -12,13 +12,13 @@ const Hero = () => {
           </div>
           
           <h1 className="text-5xl md:text-6xl font-sans font-semibold text-white leading-tight">
-            Private Debt,
+            Private Debt.
             <br />
-            Programmable & Auditable
+            Regulated Rails. Clear Records.
           </h1>
           
           <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
-            KBB makes fixed-income notes programmable with permissioned tokens while cash settles on <strong>regulated rails</strong>—no pretending payments are on-chain.
+            KBB brings professional investors to Georgian private debt. Money settles through licensed banks. The token is a register & audit log, not a payment system.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
@@ -33,12 +33,12 @@ const Hero = () => {
             </Button>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-12">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 pt-12">
             <div className="bg-white/5 border border-white/10 rounded-md p-6 text-left">
               <Shield className="w-10 h-10 text-accent mb-4" />
               <h3 className="text-lg font-medium text-white mb-2">DvP by Design</h3>
               <p className="text-white/80 text-sm leading-relaxed">
-                Delivery-versus-Payment only. Mint or transfer after verified settlement evidence.
+                Tokens move only after verified funds.
               </p>
             </div>
             
@@ -46,7 +46,7 @@ const Hero = () => {
               <FileCheck className="w-10 h-10 text-accent mb-4" />
               <h3 className="text-lg font-medium text-white mb-2">Audit-Ready</h3>
               <p className="text-white/80 text-sm leading-relaxed">
-                On-chain events mirror banking identifiers for deterministic reconciliation.
+                Register events store bank references for one-to-one matching.
               </p>
             </div>
             
@@ -54,7 +54,15 @@ const Hero = () => {
               <Coins className="w-10 h-10 text-accent mb-4" />
               <h3 className="text-lg font-medium text-white mb-2">Permissioned Transfers</h3>
               <p className="text-white/80 text-sm leading-relaxed">
-                ERC-3643 compatible. Eligibility, lockups, and jurisdictions enforced at token layer.
+                Professional-only, whitelisted, ERC-3643 compatible.
+              </p>
+            </div>
+
+            <div className="bg-white/5 border border-white/10 rounded-md p-6 text-left">
+              <Shield className="w-10 h-10 text-accent mb-4" />
+              <h3 className="text-lg font-medium text-white mb-2">CSD-Aligned</h3>
+              <p className="text-white/80 text-sm leading-relaxed">
+                Legal title in the CSD; token mirrors the record.
               </p>
             </div>
           </div>

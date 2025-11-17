@@ -16,7 +16,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-sm text-primary-foreground/70">
-              Token-registered private debt, cash-settled on regulated rails.
+              Token-registered · Cash-settled on regulated rails · Professional-only · Legal title in the CSD (Phase-1).
             </p>
           </div>
 
@@ -63,8 +63,8 @@ const Footer = () => {
         </div>
 
         <div className="mt-12 pt-8 border-t border-primary-foreground/10 text-center text-sm text-primary-foreground/60">
-          <p>© 2025 KBB MVP. Open source under MIT License.</p>
-          <p className="mt-2">Building the future of tokenized private debt infrastructure.</p>
+          <p>© 2025 KBB. Open source under MIT License.</p>
+          <p className="mt-2">Professional private debt on regulated rails.</p>
         </div>
       </div>
     </footer>
