@@ -40,7 +40,7 @@ const HowItWorks = () => {
                     High Growth Economy
                   </h3>
                   <p className="text-sm text-muted-foreground">
-                    5-7% GDP growth demands capital infrastructure
+                    7-11% GDP growth demands capital infrastructure
                   </p>
                 </div>
               </div>
@@ -54,7 +54,7 @@ const HowItWorks = () => {
                     Perfect Scale
                   </h3>
                   <p className="text-sm text-muted-foreground">
-                    Small enough to prove model ($20B economy), large enough to matter globally
+                    Small enough to prove model ($30B+ GDP), large enough to matter globally
                   </p>
                 </div>
               </div>
@@ -72,9 +72,9 @@ const HowItWorks = () => {
               </div>
               <div className="text-3xl font-bold text-primary-foreground/40">=</div>
               <div>
-                <div className="text-4xl font-bold text-accent mb-2 tabular-nums">$200M</div>
+                <div className="text-4xl font-bold text-accent mb-2 tabular-nums">$300M</div>
                 <p className="text-primary-foreground/90 text-sm">
-                  Economic impact for Georgian businesses
+                  Potential financing capacity for Georgian businesses
                 </p>
               </div>
             </div>

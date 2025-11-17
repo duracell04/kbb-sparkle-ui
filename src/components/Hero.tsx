@@ -46,9 +46,9 @@ const Hero = () => {
             </div>
 
             <div className="text-center p-6 rounded-lg bg-white border border-[#E5E7EB] shadow-sm transition-all hover:shadow-md">
-              <div className="text-5xl font-bold text-[#F59E0B] mb-2 tabular-nums">15-20%</div>
-              <p className="text-[#0D232D] text-base font-medium mb-1">Returns in high-growth economies</p>
-              <p className="text-[#4B5563] text-sm">Georgia's economic growth rate demands capital</p>
+              <div className="text-5xl font-bold text-[#F59E0B] mb-2 tabular-nums">7-11%</div>
+              <p className="text-[#0D232D] text-base font-medium mb-1">Annual GDP growth</p>
+              <p className="text-[#4B5563] text-sm">High-growth economy demands capital infrastructure</p>
             </div>
           </div>
         </div>
