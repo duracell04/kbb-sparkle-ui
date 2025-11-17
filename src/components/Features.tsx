@@ -60,8 +60,8 @@ const Features = () => {
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="text-center">
-                <div className="w-16 h-16 rounded-md bg-accent/10 border border-accent mx-auto mb-4 flex items-center justify-center">
-                  <Shield className="w-8 h-8 text-accent" />
+                <div className="w-16 h-16 rounded-md bg-success/10 border border-success mx-auto mb-4 flex items-center justify-center">
+                  <Shield className="w-8 h-8 text-success" />
                 </div>
                 <h4 className="font-medium text-foreground mb-2">Standardized</h4>
                 <p className="text-sm text-muted-foreground">
@@ -70,8 +70,8 @@ const Features = () => {
               </div>
 
               <div className="text-center">
-                <div className="w-16 h-16 rounded-md bg-success/10 border border-success mx-auto mb-4 flex items-center justify-center">
-                  <Zap className="w-8 h-8 text-success" />
+                <div className="w-16 h-16 rounded-md bg-accent/10 border border-accent mx-auto mb-4 flex items-center justify-center">
+                  <Zap className="w-8 h-8 text-accent" />
                 </div>
                 <h4 className="font-medium text-foreground mb-2">Liquid</h4>
                 <p className="text-sm text-muted-foreground">
@@ -80,8 +80,8 @@ const Features = () => {
               </div>
 
               <div className="text-center">
-                <div className="w-16 h-16 rounded-md bg-accent/10 border border-accent mx-auto mb-4 flex items-center justify-center">
-                  <Globe className="w-8 h-8 text-accent" />
+                <div className="w-16 h-16 rounded-md bg-success/10 border border-success mx-auto mb-4 flex items-center justify-center">
+                  <Globe className="w-8 h-8 text-success" />
                 </div>
                 <h4 className="font-medium text-foreground mb-2">Accessible</h4>
                 <p className="text-sm text-muted-foreground">

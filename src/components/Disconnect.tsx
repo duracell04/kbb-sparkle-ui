@@ -16,8 +16,8 @@ const Disconnect = () => {
 
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
           <Card className="p-8 bg-card border border-border text-center">
-            <TrendingUp className="w-16 h-16 text-accent mx-auto mb-4" />
-            <div className="text-4xl font-bold text-foreground mb-3">$50B+</div>
+            <TrendingUp className="w-16 h-16 text-success mx-auto mb-4" />
+            <div className="text-4xl font-bold text-success mb-3 tabular-nums">$50B+</div>
             <p className="text-lg font-medium text-foreground mb-2">
               Global Capital Seeking Returns
             </p>
@@ -27,8 +27,8 @@ const Disconnect = () => {
           </Card>
 
           <Card className="p-8 bg-card border border-border text-center">
-            <Building2 className="w-16 h-16 text-success mx-auto mb-4" />
-            <div className="text-4xl font-bold text-foreground mb-3">500+</div>
+            <Building2 className="w-16 h-16 text-accent mx-auto mb-4" />
+            <div className="text-4xl font-bold text-accent mb-3 tabular-nums">500+</div>
             <p className="text-lg font-medium text-foreground mb-2">
               Georgian SMEs Need Growth Capital
             </p>

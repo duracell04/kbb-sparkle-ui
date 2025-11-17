@@ -32,9 +32,13 @@ No gradients. Minimal shadows. Infrastructure aesthetics.
     --muted: 0 0% 96%;
     --muted-foreground: 215 16% 47%;
 
-    /* KBB Cobalt - Rare accent for data/charts only */
-    --accent: 221 83% 48%;
+    /* Gold accent - for key numbers and highlights */
+    --accent: 38 92% 50%;
     --accent-foreground: 0 0% 100%;
+    
+    /* Dark green - primary data color */
+    --highlight: 142 71% 24%;
+    --highlight-foreground: 0 0% 100%;
 
     /* Status colors - muted, regulatory */
     --success: 142 71% 24%;
@@ -87,8 +91,11 @@ No gradients. Minimal shadows. Infrastructure aesthetics.
     --muted: 220 13% 20%;
     --muted-foreground: 215 16% 65%;
 
-    --accent: 221 83% 48%;
+    --accent: 38 92% 50%;
     --accent-foreground: 0 0% 100%;
+    
+    --highlight: 142 71% 24%;
+    --highlight-foreground: 0 0% 100%;
 
     --success: 142 71% 24%;
     --success-foreground: 0 0% 100%;

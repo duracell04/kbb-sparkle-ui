@@ -7,19 +7,19 @@ const MarketValidation = () => {
       name: "Centrifuge",
       amount: "$500M+",
       description: "tokenized assets",
-      color: "text-accent",
+      color: "text-success",
     },
     {
       name: "Goldfinch",
       amount: "$100M+",
       description: "emerging markets",
-      color: "text-success",
+      color: "text-accent",
     },
     {
       name: "Maple Finance",
       amount: "$2B+",
       description: "crypto credit",
-      color: "text-accent",
+      color: "text-success",
     },
   ];
 
