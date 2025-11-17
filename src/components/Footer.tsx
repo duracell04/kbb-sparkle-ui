@@ -12,17 +12,17 @@ const Footer = () => {
               </div>
               <div>
                 <h3 className="font-semibold text-white">KBB</h3>
-                <p className="text-xs text-white/70">Kartvelian Business Bonds</p>
+                <p className="text-xs text-white/90">Kartvelian Business Bonds</p>
               </div>
             </div>
-            <p className="text-sm text-white/70 leading-relaxed">
+            <p className="text-sm text-white/90 leading-relaxed">
               Token-registered · Cash-settled on regulated rails · Professional-only · Legal title in the CSD.
             </p>
           </div>
 
           <div>
             <h4 className="font-semibold mb-4 text-white">Product</h4>
-            <ul className="space-y-2 text-sm text-white/70">
+            <ul className="space-y-2 text-sm text-white/90">
               <li><a href="#features" className="hover:text-white transition-colors">Vision</a></li>
               <li><a href="#how-it-works" className="hover:text-white transition-colors">Why Georgia</a></li>
               <li><a href="#mechanism" className="hover:text-white transition-colors">Mechanism</a></li>
@@ -32,7 +32,7 @@ const Footer = () => {
 
           <div>
             <h4 className="font-semibold mb-4 text-white">Resources</h4>
-            <ul className="space-y-2 text-sm text-white/70">
+            <ul className="space-y-2 text-sm text-white/90">
               <li>
                 <a href="https://github.com/duracell04/KBB_MVP" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-2">
                   <Github className="w-4 h-4" />
@@ -54,7 +54,7 @@ const Footer = () => {
             <h4 className="font-semibold mb-4 text-white">Standards</h4>
             <div className="flex flex-wrap gap-2">
               {["ERC-3643", "DvP", "ISO 20022", "Permissioned", "Audit-ready"].map((keyword) => (
-                <span key={keyword} className="px-2 py-1 bg-white/10 text-white/90 text-xs rounded font-mono">
+                <span key={keyword} className="px-2 py-1 bg-white/20 text-white text-xs rounded font-mono">
                   {keyword}
                 </span>
               ))}
@@ -62,7 +62,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-white/10 text-center text-sm text-white/60">
+        <div className="mt-12 pt-8 border-t border-white/20 text-center text-sm text-white/80">
           <p>© 2025 KBB. Open source under MIT License.</p>
           <p className="mt-2">Infrastructure for professional private debt.</p>
         </div>
