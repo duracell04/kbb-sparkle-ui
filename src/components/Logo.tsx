@@ -42,7 +42,7 @@ const Logo = ({
   
   return (
     <div className={cn("flex items-center gap-3", className)}>
-      {/* Icon - Capital Tree */}
+      {/* Icon - Geometric Antlers */}
       <svg
         width={iconSize}
         height={iconSize}
@@ -51,38 +51,50 @@ const Logo = ({
         xmlns="http://www.w3.org/2000/svg"
         className="flex-shrink-0"
       >
-        {/* Trunk - central vertical line */}
-        <rect x="15" y="6" width="2" height="20" fill={tree} />
+        {/* Base / skull hint */}
+        <line x1="14" y1="20" x2="18" y2="20" stroke={tree} strokeWidth="2" strokeLinecap="round" />
         
-        {/* Branch tier 1 (top) - short horizontal + tall vertical shoots */}
-        <rect x="13" y="10" width="3" height="1.5" fill={tree} />
-        <rect x="16" y="10" width="3" height="1.5" fill={tree} />
-        <rect x="12" y="8" width="1.5" height="3" fill={tree} />
-        <rect x="18.5" y="8" width="1.5" height="3" fill={tree} />
-        <rect x="11" y="7" width="2" height="2" fill={nodes} />
-        <rect x="19" y="7" width="2" height="2" fill={nodes} />
+        {/* Left horn - main beam */}
+        <polyline 
+          points="16,20 13,16 11,12 9,8" 
+          stroke={tree} 
+          strokeWidth="2" 
+          fill="none" 
+          strokeLinecap="round" 
+          strokeLinejoin="round" 
+        />
         
-        {/* Branch tier 2 - horizontal + upward turn */}
-        <rect x="11" y="14" width="5" height="1.5" fill={tree} />
-        <rect x="16" y="14" width="5" height="1.5" fill={tree} />
-        <rect x="10" y="12" width="1.5" height="3" fill={tree} />
-        <rect x="20.5" y="12" width="1.5" height="3" fill={tree} />
-        <rect x="9" y="11" width="2" height="2" fill={nodes} />
-        <rect x="21" y="11" width="2" height="2" fill={nodes} />
+        {/* Left horn - tines */}
+        <line x1="13" y1="16" x2="13" y2="12" stroke={tree} strokeWidth="2" strokeLinecap="round" />
+        <line x1="11" y1="12" x2="11" y2="8" stroke={tree} strokeWidth="2" strokeLinecap="round" />
+        <line x1="9" y1="8" x2="8" y2="5" stroke={tree} strokeWidth="2" strokeLinecap="round" />
         
-        {/* Branch tier 3 - longer horizontal + upward turn */}
-        <rect x="9" y="18" width="7" height="1.5" fill={tree} />
-        <rect x="16" y="18" width="7" height="1.5" fill={tree} />
-        <rect x="8" y="16" width="1.5" height="3" fill={tree} />
-        <rect x="22.5" y="16" width="1.5" height="3" fill={tree} />
-        <rect x="7" y="15" width="2" height="2" fill={nodes} />
-        <rect x="23" y="15" width="2" height="2" fill={nodes} />
+        {/* Right horn - main beam (mirrored) */}
+        <polyline 
+          points="16,20 19,16 21,12 23,8" 
+          stroke={tree} 
+          strokeWidth="2" 
+          fill="none" 
+          strokeLinecap="round" 
+          strokeLinejoin="round" 
+        />
         
-        {/* Branch tier 4 (bottom) - widest, shorter vertical */}
-        <rect x="7" y="22" width="9" height="1.5" fill={tree} />
-        <rect x="16" y="22" width="9" height="1.5" fill={tree} />
-        <rect x="6" y="21" width="1.5" height="2" fill={tree} />
-        <rect x="24.5" y="21" width="1.5" height="2" fill={tree} />
+        {/* Right horn - tines (mirrored) */}
+        <line x1="19" y1="16" x2="19" y2="12" stroke={tree} strokeWidth="2" strokeLinecap="round" />
+        <line x1="21" y1="12" x2="21" y2="8" stroke={tree} strokeWidth="2" strokeLinecap="round" />
+        <line x1="23" y1="8" x2="24" y2="5" stroke={tree} strokeWidth="2" strokeLinecap="round" />
+        
+        {/* Amber nodes at tine tips (accent variant only) */}
+        {variant === "accent" && (
+          <>
+            <circle cx="13" cy="12" r="1.5" fill={nodes} />
+            <circle cx="11" cy="8" r="1.5" fill={nodes} />
+            <circle cx="8" cy="5" r="1.5" fill={nodes} />
+            <circle cx="19" cy="12" r="1.5" fill={nodes} />
+            <circle cx="21" cy="8" r="1.5" fill={nodes} />
+            <circle cx="24" cy="5" r="1.5" fill={nodes} />
+          </>
+        )}
       </svg>
       
       {/* Wordmark */}
