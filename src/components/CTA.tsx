@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Github, FileText, Code2, Users } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const CTA = () => {
   return (
@@ -49,10 +50,13 @@ const CTA = () => {
             <Button
               size="lg"
               variant="outline"
+              asChild
               className="border-[#0D232D] text-[#0D232D] bg-white hover:bg-neutral-100"
             >
-              <FileText className="w-5 h-5 mr-2" />
-              Read Documentation
+              <Link to="/documentation">
+                <FileText className="w-5 h-5 mr-2" />
+                Read Documentation
+              </Link>
             </Button>
           </div>
 
