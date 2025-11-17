@@ -91,11 +91,11 @@ const Features = () => {
             </div>
           </Card>
 
-          <div className="p-8 bg-slate-50 border border-slate-200 rounded-md text-center">
+          <Card className="p-8 bg-card border border-border text-center shadow-card">
             <p className="text-lg text-muted-foreground leading-relaxed">
               <strong className="text-foreground font-semibold">Not replacing existing systems</strong> — building where they can't reach. The innovation isn't the instrument — it's the <strong className="text-foreground">access</strong>.
             </p>
-          </div>
+          </Card>
         </div>
       </div>
     </section>

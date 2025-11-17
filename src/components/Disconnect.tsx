@@ -39,14 +39,14 @@ const Disconnect = () => {
         </div>
 
         <div className="max-w-3xl mx-auto mt-12">
-          <Card className="p-6 bg-amber-50 border border-amber-200">
+          <Card className="p-6 bg-card border-l-4 border-l-warning border-t border-r border-b border-border">
             <div className="flex items-start gap-4">
-              <AlertCircle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
+              <AlertCircle className="w-6 h-6 text-warning flex-shrink-0 mt-1" />
               <div>
-                <p className="text-base text-amber-900 font-medium mb-2">
+                <p className="text-base text-foreground font-medium mb-2">
                   The Problem
                 </p>
-                <p className="text-sm text-amber-800 leading-relaxed">
+                <p className="text-sm text-muted-foreground leading-relaxed">
                   Current systems weren't built for this scale. Traditional cross-border debt infrastructure is too expensive and complex for SMEs, while local markets lack the depth to meet demand.
                 </p>
               </div>

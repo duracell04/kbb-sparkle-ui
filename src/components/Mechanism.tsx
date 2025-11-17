@@ -57,11 +57,11 @@ const Mechanism = () => {
             </Card>
           </div>
 
-          <div className="p-8 bg-slate-50 border border-slate-200 rounded-md">
+          <Card className="p-8 bg-card border border-border shadow-card">
             <p className="text-base text-muted-foreground text-center leading-relaxed">
               <strong className="text-foreground font-semibold">Same economics as traditional revenue bonds.</strong> Revolutionary distribution and liquidity. The innovation isn't the instrument — it's the access.
             </p>
-          </div>
+          </Card>
         </div>
       </div>
     </section>
