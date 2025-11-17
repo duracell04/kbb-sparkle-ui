@@ -29,13 +29,15 @@ const Hero = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
             <Button size="lg" variant="default" asChild className="bg-[#F59E0B] text-white hover:bg-[#D97706]">
-              <a href="/issuer-workflow">
+              <Link to="/issuer-workflow">
                 Get Started
                 <ArrowRight className="w-5 h-5 ml-2" />
-              </a>
+              </Link>
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white bg-transparent hover:bg-white/10">
-              View Documentation
+            <Button size="lg" variant="outline" asChild className="border-white text-white bg-transparent hover:bg-white/10">
+              <Link to="/documentation">
+                View Documentation
+              </Link>
             </Button>
           </div>
 
