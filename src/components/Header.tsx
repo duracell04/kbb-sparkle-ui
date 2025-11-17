@@ -9,7 +9,7 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="group">
-            <Logo showWordmark size="md" className="transition-opacity group-hover:opacity-80" />
+            <Logo showWordmark size="md" variant="accent" className="transition-opacity group-hover:opacity-80" />
           </Link>
 
           <nav className="hidden md:flex items-center gap-8">

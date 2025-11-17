@@ -8,9 +8,9 @@ interface LogoProps {
 }
 
 /**
- * KBB Logo - "Rails & Ledger" geometric mark
- * Two vertical rails (regulated payment rails) bridged by a token square (registered bond)
- * Specifications: 32×32 grid, ultra-minimal, no curves, no shadows
+ * KBB Logo - "Capital Tree" geometric mark
+ * Abstract tree representing capital flows to Georgian businesses
+ * Specifications: 32×32 grid, ultra-minimal, institutional aesthetic
  */
 const Logo = ({ 
   variant = "default", 
@@ -26,23 +26,23 @@ const Logo = ({
   
   const iconSize = sizeMap[size];
   
-  // Color variants - ink teal base, amber accent only
+  // Color variants - ink teal tree, amber nodes
   const colors = {
     default: {
-      rails: "#0D232D",
-      token: "#0D232D"
+      tree: "#0D232D",
+      nodes: "#0D232D"
     },
     accent: {
-      rails: "#0D232D",
-      token: "#D97706"
+      tree: "#0D232D",
+      nodes: "#D97706"
     }
   };
   
-  const { rails, token } = colors[variant];
+  const { tree, nodes } = colors[variant];
   
   return (
     <div className={cn("flex items-center gap-3", className)}>
-      {/* Icon - Rails & Ledger */}
+      {/* Icon - Capital Tree */}
       <svg
         width={iconSize}
         height={iconSize}
@@ -51,14 +51,26 @@ const Logo = ({
         xmlns="http://www.w3.org/2000/svg"
         className="flex-shrink-0"
       >
-        {/* Left rail */}
-        <rect x="8" y="6" width="4" height="20" fill={rails} />
+        {/* Trunk - central vertical line */}
+        <rect x="15" y="8" width="2" height="18" fill={tree} />
         
-        {/* Right rail */}
-        <rect x="20" y="6" width="4" height="20" fill={rails} />
+        {/* Branch tier 1 (top) */}
+        <rect x="11" y="12" width="10" height="1.5" fill={tree} />
+        <rect x="10" y="12" width="2" height="2" fill={nodes} />
+        <rect x="20" y="12" width="2" height="2" fill={nodes} />
         
-        {/* Token square - centered between rails */}
-        <rect x="12" y="12" width="8" height="8" fill={token} />
+        {/* Branch tier 2 */}
+        <rect x="9" y="16" width="14" height="1.5" fill={tree} />
+        <rect x="8" y="16" width="2" height="2" fill={nodes} />
+        <rect x="22" y="16" width="2" height="2" fill={nodes} />
+        
+        {/* Branch tier 3 */}
+        <rect x="11" y="20" width="10" height="1.5" fill={tree} />
+        <rect x="10" y="20" width="2" height="2" fill={nodes} />
+        <rect x="20" y="20" width="2" height="2" fill={nodes} />
+        
+        {/* Branch tier 4 (bottom) */}
+        <rect x="13" y="24" width="6" height="1.5" fill={tree} />
       </svg>
       
       {/* Wordmark */}
