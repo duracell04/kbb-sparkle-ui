@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -11,6 +12,7 @@ import {
   CheckCircle2,
   Circle,
   ArrowRight,
+  ArrowLeft,
   Upload,
   Database
 } from "lucide-react";
@@ -153,6 +155,16 @@ const IssuerWorkflow = () => {
     <div className="min-h-screen bg-background pt-24 pb-16">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
+          {/* Back Button */}
+          <div className="mb-8">
+            <Link to="/">
+              <Button variant="ghost" className="gap-2">
+                <ArrowLeft className="h-4 w-4" />
+                Back to Homepage
+              </Button>
+            </Link>
+          </div>
+
           {/* Header */}
           <div className="mb-12 text-center">
             <h1 className="text-4xl font-sans font-semibold text-foreground mb-4">
