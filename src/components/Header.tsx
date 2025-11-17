@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Github, FileText } from "lucide-react";
+import { Github, FileText, BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
 import Logo from "@/components/Logo";
 
@@ -22,9 +22,18 @@ const Header = () => {
             <Link to="/issuer-workflow" className="text-sm font-medium text-[#0D232D] hover:text-[#0A1B24] transition-colors">
               Issuer Demo
             </Link>
+            <Link to="/resources" className="text-sm font-medium text-[#0D232D] hover:text-[#0A1B24] transition-colors">
+              Research
+            </Link>
           </nav>
 
           <div className="flex items-center gap-3">
+            <Button variant="ghost" size="sm" asChild className="text-[#0D232D] hover:text-[#0A1B24] hover:bg-neutral-100">
+              <Link to="/resources">
+                <BookOpen className="w-4 h-4 mr-2" />
+                <span className="hidden sm:inline">Research</span>
+              </Link>
+            </Button>
             <Button variant="ghost" size="sm" asChild className="text-[#0D232D] hover:text-[#0A1B24] hover:bg-neutral-100">
               <a href="https://github.com/duracell04/KBB_MVP" target="_blank" rel="noopener noreferrer">
                 <Github className="w-4 h-4 mr-2" />

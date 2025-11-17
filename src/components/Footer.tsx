@@ -1,4 +1,4 @@
-import { Github, FileText } from "lucide-react";
+import { Github, FileText, BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
 import Logo from "@/components/Logo";
 
@@ -27,6 +27,12 @@ const Footer = () => {
           <div>
             <h4 className="font-medium mb-4 text-foreground text-sm">Resources</h4>
             <ul className="space-y-2.5 text-sm">
+              <li>
+                <Link to="/resources" className="text-muted-foreground hover:text-brand-700 transition-colors flex items-center gap-2">
+                  <BookOpen className="w-3.5 h-3.5" />
+                  Research & Sources
+                </Link>
+              </li>
               <li>
                 <a href="https://github.com/duracell04/KBB_MVP" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-brand-700 transition-colors flex items-center gap-2">
                   <Github className="w-3.5 h-3.5" />

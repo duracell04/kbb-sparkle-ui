@@ -1,5 +1,12 @@
-import { TrendingUp, Building2, AlertCircle } from "lucide-react";
+import { TrendingUp, Building2, AlertCircle, Info } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import { Link } from "react-router-dom";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 const Disconnect = () => {
   return (
@@ -9,8 +16,20 @@ const Disconnect = () => {
           <h2 className="text-4xl md:text-5xl font-sans font-semibold text-primary mb-6">
             The Disconnect
           </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            High-growth economies like Georgia (7-11% GDP growth) have hundreds of profitable SMEs that cannot access international capital. Current systems block natural capital flow.
+          <p className="text-lg text-muted-foreground leading-relaxed flex items-center justify-center gap-2 flex-wrap">
+            <span>High-growth economies like Georgia (9.4% GDP growth in 2024) have hundreds of profitable SMEs that cannot access international capital. Current systems block natural capital flow.</span>
+            <TooltipProvider>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <Link to="/resources#georgia-economy" className="text-accent hover:text-accent/80 transition-colors inline-flex">
+                    <Info className="w-4 h-4" />
+                  </Link>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p className="text-xs">Source: Geostat 2024</p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
           </p>
         </div>
 
@@ -28,7 +47,21 @@ const Disconnect = () => {
 
           <Card className="p-8 bg-card border border-border text-center shadow-card transition-all hover:shadow-lg hover:border-accent/30">
             <Building2 className="w-16 h-16 text-accent mx-auto mb-4" />
-            <div className="text-4xl font-bold text-accent mb-3 tabular-nums">500+</div>
+            <div className="flex items-center justify-center gap-2 mb-3">
+              <div className="text-4xl font-bold text-accent tabular-nums">500+</div>
+              <TooltipProvider>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <Link to="/resources#georgia-sme-finance" className="text-accent hover:text-accent/80 transition-colors">
+                      <Info className="w-4 h-4" />
+                    </Link>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p className="text-xs">Source: World Bank FSAP</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+            </div>
             <p className="text-lg font-medium text-foreground mb-2">
               Georgian SMEs Need Growth Capital
             </p>
