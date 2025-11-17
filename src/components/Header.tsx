@@ -4,33 +4,33 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
-          <Link to="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-brand-700 rounded flex items-center justify-center">
-              <span className="text-white font-semibold text-sm">KB</span>
+    <header className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-md border-b border-border shadow-sm">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="flex items-center justify-between h-20">
+          <Link to="/" className="flex items-center gap-3 group">
+            <div className="w-10 h-10 bg-brand-700 rounded flex items-center justify-center transition-transform group-hover:scale-105">
+              <span className="text-white font-semibold">KB</span>
             </div>
             <div>
-              <h1 className="text-lg font-medium text-brand-700">KBB MVP</h1>
-              <p className="text-xs text-muted-foreground">Kartvelian Business Bonds</p>
+              <h1 className="text-lg font-semibold text-brand-700 tracking-tight">KBB</h1>
+              <p className="text-xs text-muted-foreground font-medium">Kartvelian Business Bonds</p>
             </div>
           </Link>
 
-          <nav className="hidden md:flex items-center gap-6">
-            <a href="/#features" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+          <nav className="hidden md:flex items-center gap-8">
+            <a href="/#features" className="text-sm font-medium text-muted-foreground hover:text-brand-700 transition-colors">
               Vision
             </a>
-            <a href="/#how-it-works" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            <a href="/#how-it-works" className="text-sm font-medium text-muted-foreground hover:text-brand-700 transition-colors">
               Why Georgia
             </a>
-            <Link to="/issuer-workflow" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            <Link to="/issuer-workflow" className="text-sm font-medium text-muted-foreground hover:text-brand-700 transition-colors">
               Issuer Demo
             </Link>
           </nav>
 
-          <div className="flex items-center gap-2">
-            <Button variant="ghost" size="sm" asChild>
+          <div className="flex items-center gap-3">
+            <Button variant="ghost" size="sm" asChild className="text-muted-foreground hover:text-brand-700">
               <a href="https://github.com/duracell04/KBB_MVP" target="_blank" rel="noopener noreferrer">
                 <Github className="w-4 h-4 mr-2" />
                 <span className="hidden sm:inline">GitHub</span>
