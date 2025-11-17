@@ -61,18 +61,18 @@ const HowItWorks = () => {
             </div>
           </Card>
 
-          <Card className="p-8 bg-primary text-white">
+          <Card className="p-8 bg-brand-700 text-white border border-brand-600 shadow-card">
             <h3 className="text-2xl font-semibold mb-6">The Impact</h3>
             <div className="space-y-6">
               <div>
-                <div className="text-4xl font-bold text-accent mb-2">1%</div>
+                <div className="text-4xl font-bold text-accent mb-2 tabular-nums">1%</div>
                 <p className="text-white/90 text-sm">
                   Just 1% more foreign capital
                 </p>
               </div>
-              <div className="text-3xl font-bold">=</div>
+              <div className="text-3xl font-bold text-white/60">=</div>
               <div>
-                <div className="text-4xl font-bold text-accent mb-2">$200M</div>
+                <div className="text-4xl font-bold text-accent mb-2 tabular-nums">$200M</div>
                 <p className="text-white/90 text-sm">
                   Economic impact for Georgian businesses
                 </p>

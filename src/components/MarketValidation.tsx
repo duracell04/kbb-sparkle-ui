@@ -47,7 +47,7 @@ const MarketValidation = () => {
                 <h3 className="text-xl font-medium text-foreground mb-2">
                   {validation.name}
                 </h3>
-                <div className="text-3xl font-bold text-foreground mb-2">
+                <div className="text-3xl font-bold text-foreground mb-2 tabular-nums">
                   {validation.amount}
                 </div>
                 <p className="text-sm text-muted-foreground">
