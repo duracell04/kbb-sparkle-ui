@@ -49,8 +49,8 @@ const CTA = () => {
             </Button>
             <Button
               size="lg"
-              variant="hero"
-              className="font-display"
+              variant="outline"
+              className="font-sans"
             >
               <FileText className="w-5 h-5 mr-2" />
               Read Documentation

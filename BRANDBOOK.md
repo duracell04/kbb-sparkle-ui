@@ -1,170 +1,175 @@
-# KBB — Brandbook (MVP)
+# KBB — Brandbook (Executive, Minimal)
 
-> **Positioning:** KBB (Kartvelian Business Bonds) makes **cash‑settled via regulated rails, token‑registered** private debt simple, auditable, and eligible for professional investors.
-> **Business copy may say:** *bank‑settled, token‑registered private credit.*
-> **Tech copy stays neutral:** *cash‑settled via regulated rails, token‑registered.*
+**Positioning (public):** KBB standardizes **cash‑settled via regulated rails, token‑registered** private debt for professional investors.
+**Business copy may say:** *bank‑settled, token‑registered private credit.*
+**Tech copy stays neutral:** *cash‑settled via regulated rails, token‑registered.*
 
----
-
-## 1) Brand Overview (1 paragraph)
-
-KBB is a calm, precise layer that turns SME credit into standardized, auditable notes. Cash always settles on **regulated rails**; the token is the **register & distribution** layer. We don't sell hype or retail dreams—we ship professional, well‑documented infrastructure that regulators, transfer agents, and allocators can trust.
-
-**Core adjectives:** **precise, calm, modern** (add: credible, pragmatic)
-**Personality sentence:** *Feels like a calm senior analyst—measured, exact, never noisy.*
+**Attributes:** **authoritative · restrained · exacting**
+**Personality:** *Reads like a capital‑markets prospectus—terse, precise, never performative.*
 
 ---
 
-## 2) Color Palette (Tailwind‑ready)
+## 1) Brand Overview
 
-> **Goal:** finance‑grade clarity with high contrast. Use **Primary** for actions and highlights; **Secondary** sparingly for accents and charts. **Neutrals** carry most UI surfaces.
+KBB is a capital‑markets infrastructure layer that standardizes SME credit into auditable, professional‑grade instruments. Cash always settles on **regulated rails**; the token is the **register & distribution** layer. We build for regulators, transfer agents, and institutional allocators—not retail speculation.
 
-### Primary
-
-* **Indigo 600** `#4F46E5` → `bg-indigo-600 text-white` (default action)
-* **Hover:** Indigo 700 `#4338CA` → `hover:bg-indigo-700`
-* **Focus ring:** Indigo 500 `#6366F1` → `focus:ring-indigo-500`
-
-### Secondary / Accent
-
-* **Teal 500** `#14B8A6` → `text-teal-500` / `bg-teal-500` (sparingly: KPIs/links/charts)
-* **Hover:** Teal 600 `#0D9488`
-
-### Neutrals (UI scaffold)
-
-* **Background:** Slate 50 `#F8FAFC` → `bg-slate-50`
-* **Surface:** White `#FFFFFF` → `bg-white`
-* **Text Primary:** Slate 900 `#0F172A` → `text-slate-900`
-* **Text Secondary:** Slate 600 `#475569` → `text-slate-600`
-* **Borders/Dividers:** Slate 200 `#E2E8F0` → `border-slate-200`
-
-### Status
-
-* **Success:** Emerald 600 `#16A34A`
-* **Warning:** Amber 600 `#D97706`
-* **Error (Destructive):** Rose 600 `#E11D48`
-* **Info:** Sky 600 `#0284C7`
-
-**Accessibility:** Target WCAG **AA**. Pair `indigo-600` on white or slate surfaces; avoid teal on slate‑600 body text. Use `text-slate-900` for long copy.
+**Core adjectives:** **authoritative, restrained, exacting**
+**Personality:** *Capital‑markets documentation—terse, precise, zero performative language.*
 
 ---
 
-## 3) Typography & Spacing
+## 2) Color System (tailored for finance UI)
 
-**Primary font:** **Inter** (system fallback: `ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial`)
-**Optional mono (IDs/IBANs):** JetBrains Mono (or `ui-monospace, SFMono-Regular, Menlo, monospace`)
+> Principle: neutrals carry the interface; color is functional, not decorative.
+> Contrast: WCAG **AA** minimum for all text.
 
-**Sizing & usage**
+### Primary (Actions & Focus)
 
-* **text-xs (12px), text-sm (14px)** → meta, captions, legal lines
-* **text-base (16px)** → body default
-* **text-lg (18px), text-xl (20px)** → section heads
-* **text-2xl/3xl (24–30px)** → page titles (sparse)
+* **Brand Navy (primary‑700)** `#0B1F2A` (default action/background)
+* **Hover** `#0A1B24` (slightly darker)
+* **Focus ring** `#1E4D7A` (brand‑500; used only for focus/outline)
 
-**Line height:** comfortable (body `leading-7`, headings `leading-tight`)
-**Numerics:** enable **tabular‑nums** for tables/amounts.
-**Spacing grid:** 8‑point (4/8/12/16/24/32).
-**Max line length:** ~70–85 chars. Avoid walls of text.
+### Accent (Sparingly: charts/links/emphasis)
+
+* **Cobalt (accent‑700)** `#1D4ED8`
+* **Hover** `#1A43BD`
+
+### Neutrals (Surfaces & Typography)
+
+* **Background** `#FAFAFA` (zinc‑50)
+* **Surface** `#FFFFFF`
+* **Text‑Primary** `#0F172A` (slate‑900)
+* **Text‑Secondary** `#475569` (slate‑600)
+* **Borders/Dividers** `#E2E8F0` (slate‑200)
+
+### Status (Functional, muted)
+
+* **Success** `#166534` (green‑700)
+* **Warning** `#B45309` (amber‑700)
+* **Error** `#B91C1C` (red‑700)
+* **Info** `#0369A1` (sky‑700)
+
+**Prohibitions:** No gradients, neon tones, or large color fields. Use accent only where meaning is conveyed.
+
+**Accessibility:** Target WCAG **AA**. All status colors verified for contrast on white/light backgrounds.
 
 ---
 
-## 4) UI Primitives
+## 3) Typography & Rhythm
+
+**Primary font:** **Inter** (system fallback: `ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Inter, Arial`)
+**Optional mono (IDs, IBANs, hashes):** `ui-monospace, SFMono-Regular, Menlo, Consolas, monospace`
+**Numerics:** enable **tabular‑nums** for columns and KPIs.
+
+**Scale & usage**
+
+* **text-xs (12px)** fine print, table meta
+* **text-sm (14px)** labels, help text
+* **text-base (16px)** body default
+* **text-lg (18px)** section headers
+* **text-2xl (24px)** page titles (sparingly)
+
+**Line height:** body `1.6` (comfortable); headings `1.2` (tight).
+**Grid:** 8‑pt system (4/8/16/24/32).
+**Measure:** 70–85 characters per line (max).
+
+**Case:** Sentence case for UI; Title Case for document/page titles only.
+
+---
+
+## 4) UI Primitives (serious defaults)
 
 ### Buttons
 
-* **Primary:** `bg-indigo-600 text-white hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 rounded-lg px-4 h-10`
-* **Secondary:** `bg-white text-slate-900 border border-slate-200 hover:bg-slate-50 rounded-lg px-4 h-10`
-* **Ghost:** `text-slate-700 hover:bg-slate-100 rounded-lg px-3 h-10`
-* **Destructive:** `bg-rose-600 text-white hover:bg-rose-700`
+* **Primary:** `bg-[#0B1F2A] text-white hover:bg-[#0A1B24] focus:ring-2 focus:ring-[#1E4D7A] rounded-md h-10 px-4`
+* **Secondary (outline):** `border border-slate-300 text-slate-900 bg-white hover:bg-slate-50 rounded-md h-10 px-4`
+* **Ghost (tertiary):** `text-slate-700 hover:bg-slate-100 rounded-md h-10 px-3`
+* **Destructive:** `bg-[#B91C1C] text-white hover:bg-[#991B1B] rounded-md h-10 px-4`
 
-States: `aria-busy`, disabled opacity `opacity-60`, show spinner left for async.
+Rules: No emojis; no "loading" animations beyond a simple spinner; disabled uses `opacity-60`.
 
-### Cards
+### Cards & Surfaces
 
-* **Container:** `bg-white rounded-xl border border-slate-200 shadow-sm p-6`
-* **Header:** title `text-lg font-medium`, subtext `text-slate-600 text-sm`
-* **Density:** keep ≥16px padding; never cram.
+* **Card:** `bg-white border border-slate-200 rounded-md p-24 shadow-[0_1px_2px_rgba(0,0,0,0.04)]`
+* Avoid deep shadows; rely on borders and spacing.
 
 ### Inputs
 
-* **Field:** `h-10 w-full rounded-lg border border-slate-300 px-3 text-slate-900 placeholder-slate-400`
-* **Focus:** `outline-none ring-2 ring-indigo-500 ring-offset-1`
-* **Error:** border `rose-400`, help text `text-rose-600 text-sm mt-1`
-* **Min touch target:** 44px
+* **Field:** `h-10 w-full rounded-md border border-slate-300 px-3 text-slate-900 placeholder-slate-400`
+* **Focus:** `ring-2 ring-[#1E4D7A] ring-offset-1 outline-none`
+* **Error:** `border-[#B91C1C]` + help text `text-[#B91C1C] text-sm mt-1`
 
-### Badges
+### Tables
 
-* **Neutral:** `bg-slate-100 text-slate-700 rounded-md px-2 py-0.5 text-xs`
-* **Success/Warning/Error:** use status colors above; keep text legible (AA).
+* Header row `text-slate-600 text-sm`, body `text-slate-900 text-sm`; 1px dividers; **no zebra stripes** by default.
+* Right‑align numeric columns; use **tabular‑nums**.
 
 ---
 
-## 5) Voice & Microcopy
+## 5) Voice & Tone (capital‑markets)
 
-**Formality:** *plain business English* with **legal sensibility** and **developer clarity**.
-**Tone:** measured, specific, never sales‑y.
+**Formality:** Plain business English with legal exactness; no slang or emoji.
+**Style:** Short sentences; concrete nouns; prescriptive verbs.
 
 **Patterns**
 
-* Use **verbs for actions**: "**Review changes**", "**Settle order**", "**Generate extract**".
-* Keep labels **≤ 2–3 words**.
-* Prefer **specific nouns**: "**Coupon run**", "**Reconciliation report**", "**Settlement evidence**".
+* Labels ≤ **2–3 words**: "Review changes", "Settle order", "Attach evidence".
+* Disclose constraints explicitly: "Professional investors only. Whitelisted transfers."
+* Avoid promises: never say "instant", "risk‑free", or "retail‑ready".
 
-**Phrases to use (tech‑side):**
+**Approved technical phrasing**
 
 * "cash‑settled via regulated rails, token‑registered"
 * "DvP only; issuance on verified settlement evidence"
-* "professional‑only; whitelisted transfers"
-
-**Phrases to avoid (tech‑side):**
-
-* "bankless", "censorship‑resistant", "instant liquidity", "retail‑ready"
-
-**Business‑side may use:** "bank‑settled, token‑registered private credit".
+* "on‑chain events reference settlement identifiers for reconciliation"
 
 ---
 
-## 6) Do / Don't
+## 6) Do / Don't (tone & UI)
 
-| Do                                                              | Don't                       |
-| --------------------------------------------------------------- | --------------------------- |
-| "Settle order"                                                  | "Execute magic"             |
-| "Upload settlement advice (ISO 20022 / SWIFT)"                  | "Drop your file here"       |
-| "Whitelisted OTC transfers only"                                | "Free trading for everyone" |
-| "Coupon run completed — 142 recipients, T+1 wires in progress." | "Payouts sent 🚀🚀"         |
-| "Generate registrar extract (PDF)"                              | "Download stuff"            |
+| Do                                                             | Don't                        |
+| -------------------------------------------------------------- | ---------------------------- |
+| "Attach settlement evidence (ISO 20022/SWIFT)."                | "Drop your file here."       |
+| "Settle order"                                                 | "Do the thing"               |
+| "Whitelisted OTC transfers only."                              | "Free trading for everyone." |
+| "Coupon run completed. 142 recipients. T+1 wires in progress." | "Payouts sent 🚀🚀"          |
+| "Generate registrar extract (PDF)."                            | "Download stuff."            |
 
 ---
 
-## 7) Example Strings (ready to paste)
+## 7) Content Patterns (ready to paste)
 
 **Section titles**
 
-* "Reconciliation" / "Settlement Evidence" / "Registrar Extracts" / "Coupon Runs"
+* Reconciliation · Settlement evidence · Registrar extracts · Coupon runs
 
-**CTA buttons**
+**CTAs**
 
-* "Review changes" · "Settle order" · "Attach evidence" · "Generate extract"
+* Review changes · Settle order · Attach evidence · Generate extract
 
 **Empty state**
 
-* "No settlement evidence uploaded yet. Attach ISO 20022 camt.054 or permitted stablecoin proof."
+* "No settlement evidence provided. Attach ISO 20022 camt.054 or permitted stablecoin proof."
+
+**Warnings/Errors**
+
+* "Deadline approaching: order ORD‑1287 must settle within 2 hours."
+* "Evidence mismatch: amount/currency do not reconcile to order ORD‑1287."
 
 **Inline help**
 
 * "KBB is **cash‑settled via regulated rails**. Tokens function as the **register & distribution** layer for professional investors."
 
-**Alert (warning)**
+---
 
-* "Deadline approaching: order ORD‑1287 must settle within 2h to remain valid."
+## 8) Imagery & Diagrams
 
-**Alert (error)**
-
-* "Evidence mismatch: amount/currency do not reconcile to order ORD‑1287. Review and re‑attach."
+* **Diagrams only** (Mermaid/line icons). No mascots, illustrations, or stock photography.
+* Axis, labels, and legends in neutrals; one **accent** series at most.
 
 ---
 
-## 8) Tailwind Token Mapping (snippet)
+## 9) Tailwind Mapping (tokens)
 
 ```js
 // tailwind.config.js (excerpt)
@@ -172,16 +177,30 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: {
-          DEFAULT: '#4F46E5', // indigo-600
-          50:'#EEF2FF',100:'#E0E7FF',200:'#C7D2FE',300:'#A5B4FC',
-          400:'#818CF8',500:'#6366F1',600:'#4F46E5',700:'#4338CA',
-          800:'#3730A3',900:'#312E81'
+        brand: {
+          50:  '#F2F5F8',
+          100: '#E6ECF2',
+          200: '#CCD8E5',
+          300: '#B3C5D9',
+          400: '#8AA4C2',
+          500: '#1E4D7A',   // focus ring
+          600: '#143A5C',
+          700: '#0B1F2A',   // primary action
+          800: '#0A1B24',
+          900: '#09161D'
         },
-        secondary: {
-          DEFAULT: '#14B8A6', // teal-500
-          600:'#0D9488'
+        accent: {
+          700: '#1D4ED8'    // cobalt, use sparingly
         }
+      },
+      borderRadius: {
+        md: '6px'          // restrained curvature
+      },
+      boxShadow: {
+        card: '0 1px 2px rgba(0,0,0,0.04)'
+      },
+      fontFeatureSettings: {
+        'tabular-nums': '"tnum" 1'
       }
     }
   }
@@ -190,25 +209,24 @@ export default {
 
 ---
 
-## 9) Quick Reference (1‑page sheet)
+## 10) Governance
 
-* **Adjectives:** precise · calm · modern
-* **Personality:** calm senior analyst, never hype
-* **Primary:** indigo‑600 `#4F46E5` (actions)
-* **Accent:** teal‑500 `#14B8A6` (sparingly)
-* **Neutrals:** slate‑50 bg, slate‑900 text, slate‑200 borders
-* **Status:** success emerald‑600 · warning amber‑600 · error rose‑600
-* **Type:** Inter; tabular‑nums for amounts; 8‑pt spacing
-* **Buttons:** primary/secondary/ghost; rounded‑lg; ring‑2 focus
-* **Cards:** white, rounded‑xl, border slate‑200, shadow‑sm, p‑6
-* **Inputs:** h‑10, rounded‑lg, ring‑2 on focus, helpful error text
-* **Voice:** plain business English; verbs for actions; labels ≤3 words
-* **Avoid:** retail promises, hype, "bankless" claims
+* One owner for brand tokens (design systems) and one for copy style.
+* All UI additions must pass: **contrast AA**, **tabular‑nums for financials**, and **no emoji/hype** checks.
 
 ---
 
-### Next steps
+## Quick Reference (1‑page sheet)
 
-* Drop this into `BRANDBOOK.md`.
-* Add `assets/brand/` with color swatches and a preview PNG.
-* If helpful, I can produce a **starter Figma file** and a **Tailwind "components.tsx"** with these primitives (Button/Card/Input/Badge) wired to the tokens.
+* **Adjectives:** authoritative · restrained · exacting
+* **Personality:** capital‑markets prospectus, never hype
+* **Primary:** brand‑700 `#0B1F2A` (actions); hover a shade darker; focus `#1E4D7A`
+* **Accent:** cobalt `#1D4ED8` (sparingly)
+* **Neutrals:** background `#FAFAFA`, text `#0F172A`, border `#E2E8F0`
+* **Status:** green‑700 / amber‑700 / red‑700 / sky‑700
+* **Type:** Inter; sentence case; tabular‑nums in tables
+* **Buttons:** rounded‑md (6px), minimal shadow, no gradients
+* **Cards:** border + subtle shadow, never heavy elevation
+* **Inputs:** h‑10, rounded‑md, ring‑2 on focus, helpful error text
+* **Voice:** legal‑grade clarity; verbs for actions; labels ≤3 words; no emoji
+* **Prohibitions:** no gradients, no neon, no mascots, no retail promises
