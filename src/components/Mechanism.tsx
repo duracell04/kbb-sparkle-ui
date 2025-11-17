@@ -16,8 +16,8 @@ const Mechanism = () => {
 
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            <Card className="p-8 bg-card border border-border text-center">
-              <div className="w-16 h-16 rounded-md bg-accent/10 border border-accent mx-auto mb-4 flex items-center justify-center">
+            <Card className="p-8 bg-card border border-border text-center shadow-card transition-all hover:shadow-lg hover:border-accent/30">
+              <div className="w-16 h-16 rounded-md bg-accent/10 border border-accent/30 mx-auto mb-4 flex items-center justify-center transition-all hover:bg-accent/20 hover:border-accent/50">
                 <Coins className="w-8 h-8 text-accent" />
               </div>
               <h3 className="text-lg font-medium text-foreground mb-3">
@@ -29,12 +29,12 @@ const Mechanism = () => {
             </Card>
 
             <div className="flex items-center justify-center">
-              <ArrowRight className="w-8 h-8 text-muted-foreground hidden md:block" />
+              <ArrowRight className="w-8 h-8 text-accent hidden md:block" />
             </div>
 
-            <Card className="p-8 bg-card border border-border text-center">
-              <div className="w-16 h-16 rounded-md bg-success/10 border border-success mx-auto mb-4 flex items-center justify-center">
-                <DollarSign className="w-8 h-8 text-success" />
+            <Card className="p-8 bg-card border border-border text-center shadow-card transition-all hover:shadow-lg hover:border-accent/30">
+              <div className="w-16 h-16 rounded-md bg-accent/10 border border-accent/30 mx-auto mb-4 flex items-center justify-center transition-all hover:bg-accent/20 hover:border-accent/50">
+                <DollarSign className="w-8 h-8 text-accent" />
               </div>
               <h3 className="text-lg font-medium text-foreground mb-3">
                 Investors Buy Globally
@@ -44,9 +44,9 @@ const Mechanism = () => {
               </p>
             </Card>
 
-            <Card className="md:col-span-3 p-8 bg-card border border-border text-center">
-              <div className="w-16 h-16 rounded-md bg-success/10 border border-success mx-auto mb-4 flex items-center justify-center">
-                <Shield className="w-8 h-8 text-success" />
+            <Card className="md:col-span-3 p-8 bg-card border border-primary/20 text-center shadow-card transition-all hover:shadow-lg hover:border-primary/30">
+              <div className="w-16 h-16 rounded-md bg-primary/5 border border-primary/20 mx-auto mb-4 flex items-center justify-center transition-all hover:bg-primary/10 hover:border-primary/30">
+                <Shield className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-lg font-medium text-foreground mb-3">
                 Blockchain Handles Settlement

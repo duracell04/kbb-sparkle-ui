@@ -33,18 +33,18 @@ const Hero = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-12">
-            <div className="text-center">
-              <div className="text-5xl font-bold text-success mb-2 tabular-nums">$50B+</div>
+            <div className="text-center p-6 rounded-lg bg-card border border-border shadow-card transition-all hover:shadow-lg">
+              <div className="text-5xl font-bold text-accent mb-2 tabular-nums">$50B+</div>
               <p className="text-muted-foreground text-base">Global capital seeking emerging market yields</p>
             </div>
 
-            <div className="text-center">
+            <div className="text-center p-6 rounded-lg bg-card border border-accent/20 shadow-card transition-all hover:shadow-lg hover:border-accent/40">
               <div className="text-5xl font-bold text-accent mb-2 tabular-nums">500+</div>
               <p className="text-muted-foreground text-base">Georgian SMEs needing growth capital</p>
             </div>
 
-            <div className="text-center">
-              <div className="text-5xl font-bold text-success mb-2 tabular-nums">15-20%</div>
+            <div className="text-center p-6 rounded-lg bg-card border border-border shadow-card transition-all hover:shadow-lg">
+              <div className="text-5xl font-bold text-accent mb-2 tabular-nums">15-20%</div>
               <p className="text-muted-foreground text-base">Returns in high-growth economies like Georgia</p>
             </div>
           </div>
