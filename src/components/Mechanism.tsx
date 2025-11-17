@@ -45,8 +45,8 @@ const Mechanism = () => {
             </Card>
 
             <Card className="md:col-span-3 p-8 bg-card border border-border text-center">
-              <div className="w-16 h-16 rounded-md bg-accent/10 border border-accent mx-auto mb-4 flex items-center justify-center">
-                <Shield className="w-8 h-8 text-accent" />
+              <div className="w-16 h-16 rounded-md bg-success/10 border border-success mx-auto mb-4 flex items-center justify-center">
+                <Shield className="w-8 h-8 text-success" />
               </div>
               <h3 className="text-lg font-medium text-foreground mb-3">
                 Blockchain Handles Settlement

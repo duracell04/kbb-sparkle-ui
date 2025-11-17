@@ -33,7 +33,7 @@ const Hero = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-12">
             <div className="text-center">
-              <div className="text-5xl font-bold text-accent mb-2 tabular-nums">$50B+</div>
+              <div className="text-5xl font-bold text-success mb-2 tabular-nums">$50B+</div>
               <p className="text-muted-foreground text-base">
                 Global capital seeking emerging market yields
               </p>
@@ -47,7 +47,7 @@ const Hero = () => {
             </div>
             
             <div className="text-center">
-              <div className="text-5xl font-bold text-accent mb-2 tabular-nums">15-20%</div>
+              <div className="text-5xl font-bold text-success mb-2 tabular-nums">15-20%</div>
               <p className="text-muted-foreground text-base">
                 Returns in high-growth economies like Georgia
               </p>

@@ -16,7 +16,7 @@ const CTA = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8">
             <Card className="p-6 bg-card border border-border text-center shadow-card">
-              <Code2 className="w-10 h-10 text-accent mx-auto mb-4" />
+              <Code2 className="w-10 h-10 text-success mx-auto mb-4" />
               <h3 className="text-lg font-medium text-foreground mb-2">Contribute a Slice</h3>
               <p className="text-sm text-muted-foreground">Small PR + one test. Every contribution counts.</p>
             </Card>
@@ -28,7 +28,7 @@ const CTA = () => {
             </Card>
 
             <Card className="p-6 bg-card border border-border text-center shadow-card">
-              <Users className="w-10 h-10 text-accent mx-auto mb-4" />
+              <Users className="w-10 h-10 text-success mx-auto mb-4" />
               <h3 className="text-lg font-medium text-foreground mb-2">Challenge Mechanics</h3>
               <p className="text-sm text-muted-foreground">Invariants, rounding, record dates, failure paths.</p>
             </Card>
