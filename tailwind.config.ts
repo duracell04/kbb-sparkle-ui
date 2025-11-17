@@ -48,6 +48,14 @@ export default {
           DEFAULT: "hsl(var(--success))",
           foreground: "hsl(var(--success-foreground))",
         },
+        warning: {
+          DEFAULT: "hsl(var(--warning))",
+          foreground: "hsl(var(--warning-foreground))",
+        },
+        info: {
+          DEFAULT: "hsl(var(--info))",
+          foreground: "hsl(var(--info-foreground))",
+        },
         popover: {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
@@ -55,6 +63,39 @@ export default {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+        },
+        // Brand scale - KBB Ink navy
+        brand: {
+          50: "0 0% 96%",
+          100: "210 20% 90%",
+          200: "210 20% 82%",
+          300: "210 20% 74%",
+          400: "208 40% 52%",
+          500: "208 62% 30%",
+          600: "198 62% 24%",
+          700: "198 62% 11%",
+          800: "198 62% 10%",
+          900: "198 62% 8%",
+        },
+        // Neutral scale - Paper/Steel
+        neutral: {
+          50: "0 0% 96%",
+          100: "0 0% 98%",
+          200: "220 13% 91%",
+          300: "220 9% 75%",
+          400: "215 14% 60%",
+          500: "215 16% 47%",
+          600: "220 10% 35%",
+          700: "215 14% 28%",
+          800: "220 18% 20%",
+          900: "222 47% 11%",
+        },
+        // Status colors - regulatory/muted
+        status: {
+          success: "142 71% 24%",
+          warning: "25 95% 37%",
+          error: "0 72% 42%",
+          info: "199 89% 33%",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
@@ -122,9 +163,8 @@ export default {
         "gradient-ornament": "var(--gradient-ornament)",
       },
       boxShadow: {
-        elevated: "var(--shadow-elevated)",
-        glow: "var(--shadow-glow)",
-        ornate: "var(--shadow-ornate)",
+        card: "0 1px 2px rgba(0,0,0,0.04)",
+        elevated: "0 2px 4px rgba(0,0,0,0.06)",
       },
     },
   },

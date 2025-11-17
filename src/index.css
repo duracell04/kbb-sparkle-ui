@@ -2,43 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
-/* KBB Design System - Executive, Institutional
-All colors MUST be HSL. Based on BRANDBOOK.md (capital-markets grade).
-Primary: Brand Navy, Accent: Cobalt (sparingly), Neutrals: Zinc/Slate
-No gradients. Minimal shadows. Serious aesthetics.
+/* KBB Design System - Supervisory Mode
+All colors MUST be HSL. Disciplined palette for regulatory presentation.
+Primary: KBB Ink (navy), Accent: Cobalt (rare), Neutrals: Paper/Steel
+No gradients. Minimal shadows. Infrastructure aesthetics.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 98%;
-    --foreground: 222.2 47.4% 11.2%;
+    /* Paper-like background for "board pack" feel */
+    --background: 0 0% 96%;
+    --foreground: 222 47% 11%;
 
+    /* White surface cards */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 47.4% 11.2%;
+    --card-foreground: 222 47% 11%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 47.4% 11.2%;
+    --popover-foreground: 222 47% 11%;
 
+    /* KBB Ink - Primary brand (navy) */
     --primary: 198 62% 11%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 214.3 31.8% 91.4%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Muted neutrals for surfaces */
+    --secondary: 220 13% 91%;
+    --secondary-foreground: 222 47% 11%;
 
-    --muted: 214.3 31.8% 91.4%;
+    --muted: 0 0% 96%;
     --muted-foreground: 215 16% 47%;
 
+    /* KBB Cobalt - Rare accent for data/charts only */
     --accent: 221 83% 48%;
     --accent-foreground: 0 0% 100%;
 
+    /* Status colors - muted, regulatory */
     --success: 142 71% 24%;
     --success-foreground: 0 0% 100%;
+
+    --warning: 25 95% 37%;
+    --warning-foreground: 0 0% 100%;
 
     --destructive: 0 72% 42%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
+    --info: 199 89% 33%;
+    --info-foreground: 0 0% 100%;
+
+    /* Subtle borders and inputs */
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
     --ring: 208 62% 30%;
 
     --shadow-card: 0 1px 2px rgba(0,0,0,0.04);
@@ -56,38 +69,44 @@ No gradients. Minimal shadows. Serious aesthetics.
   }
 
   .dark {
-    --background: 222.2 47.4% 11.2%;
+    --background: 198 62% 10%;
     --foreground: 210 40% 98%;
 
-    --card: 217.2 32.6% 17.5%;
+    --card: 198 62% 11%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 217.2 32.6% 17.5%;
+    --popover: 198 62% 11%;
     --popover-foreground: 210 40% 98%;
 
     --primary: 208 62% 30%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 217.2 32.6% 17.5%;
+    --secondary: 220 13% 20%;
     --secondary-foreground: 210 40% 98%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 220 13% 20%;
+    --muted-foreground: 215 16% 65%;
 
-    --accent: 221 77% 42%;
+    --accent: 221 83% 48%;
     --accent-foreground: 0 0% 100%;
 
     --success: 142 71% 24%;
     --success-foreground: 0 0% 100%;
 
+    --warning: 25 95% 37%;
+    --warning-foreground: 0 0% 100%;
+
     --destructive: 0 72% 42%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
+    --info: 199 89% 33%;
+    --info-foreground: 0 0% 100%;
+
+    --border: 220 13% 25%;
+    --input: 220 13% 25%;
     --ring: 208 62% 30%;
 
-    --shadow-card: 0 1px 2px rgba(0,0,0,0.06);
+    --shadow-card: 0 1px 2px rgba(0,0,0,0.08);
     
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
