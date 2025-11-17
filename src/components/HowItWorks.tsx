@@ -1,107 +1,84 @@
 import { Card } from "@/components/ui/card";
-import { ArrowRight, Wallet, CheckCircle2, FileText, Coins } from "lucide-react";
+import { CheckCircle2, TrendingUp, Target } from "lucide-react";
 
 const HowItWorks = () => {
-  const steps = [
-    {
-      icon: Wallet,
-      title: "Subscribe",
-      description: "Eligible investor (e.g., Georgian professional abroad) decides to invest.",
-      highlight: "Subscribe",
-    },
-    {
-      icon: CheckCircle2,
-      title: "Fund",
-      description: "Money sent to escrow at licensed bank via SWIFT/SEPA/ACH/FPS. Or approved stablecoin from whitelisted wallet.",
-      highlight: "Fund",
-    },
-    {
-      icon: FileText,
-      title: "Verify",
-      description: "KBB receives proof of cleared funds (ISO 20022 message or payment reference). Settlement evidence validated.",
-      highlight: "Verify",
-    },
-    {
-      icon: Coins,
-      title: "Settle",
-      description: "After verification, note issued/transferred to investor (DvP). Token register updated with on-chain event storing bank reference.",
-      highlight: "Settle",
-    },
-  ];
-
   return (
     <section className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-sans font-semibold text-foreground mb-4">
-            How It Works
+            Why Georgia, Why Now
           </h2>
           <p className="text-lg text-muted-foreground">
-            Simple rule: No verified funds → No token delivery. Money stays in banks; the token is a register & reporting tool.
+            The perfect combination of opportunity, readiness, and impact
           </p>
         </div>
 
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 relative">
-            {steps.map((step, index) => (
-              <div key={index} className="relative animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
-                <Card className="p-6 h-full bg-card border border-border">
-                  <div className="flex flex-col items-center text-center space-y-4">
-                    <div className="relative">
-                      <div className="bg-accent/10 border border-accent p-4 rounded-md">
-                        <step.icon className="w-8 h-8 text-accent" />
-                      </div>
-                    </div>
-                    
-                    <div className="space-y-2">
-                      <div className="inline-block px-3 py-1 bg-accent/10 text-accent text-xs font-medium rounded-md">
-                        {step.highlight}
-                      </div>
-                      <h3 className="text-lg font-medium text-foreground">
-                        {step.title}
-                      </h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed">
-                        {step.description}
-                      </p>
-                    </div>
-                  </div>
-                </Card>
-                
-                {index < steps.length - 1 && (
-                  <div className="hidden md:flex absolute top-1/2 -right-3 transform -translate-y-1/2 z-10">
-                    <ArrowRight className="w-6 h-6 text-accent" />
-                  </div>
-                )}
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+          <Card className="p-8 bg-card border border-border">
+            <div className="space-y-6">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-md bg-accent/10 border border-accent flex items-center justify-center flex-shrink-0">
+                  <CheckCircle2 className="w-6 h-6 text-accent" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-medium text-foreground mb-2">
+                    Government Support
+                  </h3>
+                  <p className="text-sm text-muted-foreground">
+                    Actively seeking fintech innovation leadership
+                  </p>
+                </div>
               </div>
-            ))}
-          </div>
 
-          <div className="mt-16 p-8 bg-secondary/50 border border-border rounded-md">
-            <h4 className="text-lg font-medium text-foreground mb-4 flex items-center gap-2">
-              <FileText className="w-5 h-5 text-accent" />
-              Event Schema (Rail-Agnostic)
-            </h4>
-            <div className="space-y-2 font-mono text-sm">
-              <div className="bg-card p-4 rounded border border-border">
-                <code className="text-foreground">
-                  SubscriptionSettled(orderId, investor, amount, currency, <span className="text-accent">settlementRef</span>, <span className="text-accent">settlementNetwork</span>)
-                </code>
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-md bg-success/10 border border-success flex items-center justify-center flex-shrink-0">
+                  <TrendingUp className="w-6 h-6 text-success" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-medium text-foreground mb-2">
+                    High Growth Economy
+                  </h3>
+                  <p className="text-sm text-muted-foreground">
+                    5-7% GDP growth demands capital infrastructure
+                  </p>
+                </div>
               </div>
-              <div className="bg-card p-4 rounded border border-border">
-                <code className="text-foreground">
-                  CouponPaid(periodId, grossAmount, withholding, netAmount, <span className="text-accent">settlementRef</span>, <span className="text-accent">settlementNetwork</span>)
-                </code>
-              </div>
-              <div className="bg-card p-4 rounded border border-border">
-                <code className="text-foreground">
-                  RedemptionPaid(amount, <span className="text-accent">settlementRef</span>, <span className="text-accent">settlementNetwork</span>)
-                </code>
+
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-md bg-accent/10 border border-accent flex items-center justify-center flex-shrink-0">
+                  <Target className="w-6 h-6 text-accent" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-medium text-foreground mb-2">
+                    Perfect Scale
+                  </h3>
+                  <p className="text-sm text-muted-foreground">
+                    Small enough to prove model ($20B economy), large enough to matter globally
+                  </p>
+                </div>
               </div>
             </div>
-            <p className="text-sm text-muted-foreground mt-4">
-              <strong>settlementNetwork:</strong> ISO20022 | SWIFT | SEPA | ACH | FPS | ONCHAIN_STABLECOIN
-            </p>
-          </div>
+          </Card>
+
+          <Card className="p-8 bg-primary text-white">
+            <h3 className="text-2xl font-semibold mb-6">The Impact</h3>
+            <div className="space-y-6">
+              <div>
+                <div className="text-4xl font-bold text-accent mb-2">1%</div>
+                <p className="text-white/90 text-sm">
+                  Just 1% more foreign capital
+                </p>
+              </div>
+              <div className="text-3xl font-bold">=</div>
+              <div>
+                <div className="text-4xl font-bold text-accent mb-2">$200M</div>
+                <p className="text-white/90 text-sm">
+                  Economic impact for Georgian businesses
+                </p>
+              </div>
+            </div>
+          </Card>
         </div>
       </div>
     </section>

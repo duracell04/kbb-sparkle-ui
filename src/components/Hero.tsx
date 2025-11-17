@@ -8,17 +8,17 @@ const Hero = () => {
         <div className="max-w-5xl mx-auto text-center space-y-8 animate-fade-in">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 border border-white/20 rounded-md text-white text-sm font-medium">
             <Shield className="w-4 h-4" />
-            Token-registered · Cash-settled · Regulated Rails
+            Kartvelian Business Bonds
           </div>
           
           <h1 className="text-5xl md:text-6xl font-sans font-semibold text-white leading-tight">
-            Private Debt.
+            Unlocking $1 Billion of Dormant Capital
             <br />
-            Regulated Rails. Clear Records.
+            for Georgian SMEs
           </h1>
           
           <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
-            KBB brings professional investors to Georgian private debt. Money settles through licensed banks. The token is a register & audit log, not a payment system.
+            Bridging Georgian businesses with global capital using blockchain rails. Not replacing existing systems — building where they can't reach.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
@@ -33,36 +33,25 @@ const Hero = () => {
             </Button>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 pt-12">
-            <div className="bg-white/5 border border-white/10 rounded-md p-6 text-left">
-              <Shield className="w-10 h-10 text-accent mb-4" />
-              <h3 className="text-lg font-medium text-white mb-2">DvP by Design</h3>
-              <p className="text-white/80 text-sm leading-relaxed">
-                Tokens move only after verified funds.
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-12">
+            <div className="text-center">
+              <div className="text-5xl font-bold text-accent mb-2">$50B+</div>
+              <p className="text-white/90 text-base">
+                Global capital seeking emerging market yields
               </p>
             </div>
             
-            <div className="bg-white/5 border border-white/10 rounded-md p-6 text-left">
-              <FileCheck className="w-10 h-10 text-accent mb-4" />
-              <h3 className="text-lg font-medium text-white mb-2">Audit-Ready</h3>
-              <p className="text-white/80 text-sm leading-relaxed">
-                Register events store bank references for one-to-one matching.
+            <div className="text-center">
+              <div className="text-5xl font-bold text-accent mb-2">500+</div>
+              <p className="text-white/90 text-base">
+                Georgian SMEs needing growth capital
               </p>
             </div>
             
-            <div className="bg-white/5 border border-white/10 rounded-md p-6 text-left">
-              <Coins className="w-10 h-10 text-accent mb-4" />
-              <h3 className="text-lg font-medium text-white mb-2">Permissioned Transfers</h3>
-              <p className="text-white/80 text-sm leading-relaxed">
-                Professional-only, whitelisted, ERC-3643 compatible.
-              </p>
-            </div>
-
-            <div className="bg-white/5 border border-white/10 rounded-md p-6 text-left">
-              <Shield className="w-10 h-10 text-accent mb-4" />
-              <h3 className="text-lg font-medium text-white mb-2">CSD-Aligned</h3>
-              <p className="text-white/80 text-sm leading-relaxed">
-                Legal title in the CSD; token mirrors the record.
+            <div className="text-center">
+              <div className="text-5xl font-bold text-accent mb-2">15-20%</div>
+              <p className="text-white/90 text-base">
+                Returns in high-growth economies like Georgia
               </p>
             </div>
           </div>

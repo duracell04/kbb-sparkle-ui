@@ -46,49 +46,56 @@ const Features = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-sans font-semibold text-foreground mb-4">
-            Why KBB Matters
+            The Vision
           </h2>
           <p className="text-lg text-muted-foreground">
-            Professional-grade infrastructure for tokenized private debt on regulated rails.
+            Create a bridge between Georgian businesses and global capital using blockchain rails.
           </p>
         </div>
 
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {features.map((feature, index) => (
-            <Card
-              key={index}
-              className="p-6 bg-card border border-border"
-              style={{ animationDelay: `${index * 75}ms` }}
-            >
-              <div className="space-y-4">
-                <div className="flex items-start gap-4">
-                  <div className={`p-3 bg-secondary rounded-md ${feature.color}`}>
-                    <feature.icon className="w-6 h-6" />
-                  </div>
-                  <div className="flex-1 space-y-2">
-                    <h3 className="text-lg font-medium text-foreground">
-                      {feature.title}
-                    </h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
-                      {feature.description}
-                    </p>
-                  </div>
+        <div className="max-w-4xl mx-auto space-y-8">
+          <Card className="p-8 bg-card border border-border">
+            <h3 className="text-2xl font-medium text-foreground mb-6 text-center">
+              Think "Eurobond Market for SMEs"
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="text-center">
+                <div className="w-16 h-16 rounded-md bg-accent/10 border border-accent mx-auto mb-4 flex items-center justify-center">
+                  <Shield className="w-8 h-8 text-accent" />
                 </div>
+                <h4 className="font-medium text-foreground mb-2">Standardized</h4>
+                <p className="text-sm text-muted-foreground">
+                  Common bond structures that global investors understand
+                </p>
               </div>
-            </Card>
-          ))}
-        </div>
 
-        <div className="max-w-4xl mx-auto mt-16 p-8 bg-slate-50 border border-slate-200 rounded-md">
-          <h3 className="text-2xl font-medium text-foreground mb-4 text-center">
-            What KBB Is
-          </h3>
-          <p className="text-base text-muted-foreground text-center leading-relaxed">
-            <strong className="text-foreground">Is:</strong> A controlled way to record ownership and servicing of private notes; professional-only; CSD-aligned; bank-funded; audit-ready.
-          </p>
-          <p className="text-base text-muted-foreground text-center leading-relaxed mt-4">
-            <strong className="text-foreground">Is not:</strong> A retail trading app; a way to bypass banks or the central bank; a promise of instant liquidity.
-          </p>
+              <div className="text-center">
+                <div className="w-16 h-16 rounded-md bg-success/10 border border-success mx-auto mb-4 flex items-center justify-center">
+                  <Zap className="w-8 h-8 text-success" />
+                </div>
+                <h4 className="font-medium text-foreground mb-2">Liquid</h4>
+                <p className="text-sm text-muted-foreground">
+                  Blockchain rails enable efficient secondary markets
+                </p>
+              </div>
+
+              <div className="text-center">
+                <div className="w-16 h-16 rounded-md bg-accent/10 border border-accent mx-auto mb-4 flex items-center justify-center">
+                  <Globe className="w-8 h-8 text-accent" />
+                </div>
+                <h4 className="font-medium text-foreground mb-2">Accessible</h4>
+                <p className="text-sm text-muted-foreground">
+                  Global reach without traditional infrastructure costs
+                </p>
+              </div>
+            </div>
+          </Card>
+
+          <div className="p-8 bg-slate-50 border border-slate-200 rounded-md text-center">
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              <strong className="text-foreground font-semibold">Not replacing existing systems</strong> — building where they can't reach. The innovation isn't the instrument — it's the <strong className="text-foreground">access</strong>.
+            </p>
+          </div>
         </div>
       </div>
     </section>
