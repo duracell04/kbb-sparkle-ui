@@ -18,14 +18,11 @@ const Header = () => {
           </Link>
 
           <nav className="hidden md:flex items-center gap-6">
-            <a href="/#how-it-works" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-              How It Works
-            </a>
             <a href="/#features" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-              Features
+              Vision
             </a>
-            <a href="/#architecture" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-              Architecture
+            <a href="/#how-it-works" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+              Why Georgia
             </a>
             <Link to="/issuer-workflow" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Issuer Demo
