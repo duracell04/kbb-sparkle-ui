@@ -45,7 +45,7 @@ const Documentation = () => {
               1. Regulatory Approval Pathway
             </h2>
             
-            <div className="space-y-4 text-muted-foreground">
+            <div className="space-y-4 text-foreground">
               <p>
                 Kartvelian Business Bonds operates under Georgian securities law as a private debt 
                 placement platform. Full deployment requires:
@@ -85,10 +85,10 @@ const Documentation = () => {
               2. Technical Integration Requirements
             </h2>
             
-            <div className="space-y-6 text-muted-foreground">
+            <div className="space-y-6 text-foreground">
               <div>
                 <h3 className="text-lg font-medium text-foreground mb-3">2.1 Issuer Onboarding</h3>
-                <div className="bg-muted/50 p-4 rounded font-mono text-sm space-y-1">
+                <div className="bg-muted p-4 rounded font-mono text-sm space-y-1 text-foreground">
                   <div>Required documentation:</div>
                   <div className="ml-4">• Certificate of incorporation (GE registry extract)</div>
                   <div className="ml-4">• Three years of audited financials (IFRS)</div>
@@ -102,7 +102,7 @@ const Documentation = () => {
                 <p className="mb-2">
                   All instruments implement ERC-3643 (T-REX) for permissioned transfers:
                 </p>
-                <div className="bg-muted/50 p-4 rounded font-mono text-sm space-y-1">
+                <div className="bg-muted p-4 rounded font-mono text-sm space-y-1 text-foreground">
                   <div>contract KBBInstrument is IERC3643 &#123;</div>
                   <div className="ml-4">function transfer(address _to, uint256 _amount)</div>
                   <div className="ml-8">returns (bool) &#123;</div>
@@ -119,17 +119,17 @@ const Documentation = () => {
                 <p className="mb-2">
                   Payment confirmation via ISO 20022-compliant messages from custodian:
                 </p>
-                <div className="bg-muted/50 p-4 rounded space-y-2 text-sm">
+                <div className="bg-muted p-4 rounded space-y-2 text-sm text-foreground">
                   <div className="flex justify-between">
-                    <span className="text-muted-foreground">Format:</span>
+                    <span className="font-medium">Format:</span>
                     <span className="font-mono">pain.001 (payment initiation)</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-muted-foreground">Confirmation:</span>
+                    <span className="font-medium">Confirmation:</span>
                     <span className="font-mono">camt.054 (credit notification)</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-muted-foreground">Reconciliation:</span>
+                    <span className="font-medium">Reconciliation:</span>
                     <span className="font-mono">Daily MT940 statement match</span>
                   </div>
                 </div>
@@ -146,7 +146,7 @@ const Documentation = () => {
               3. Compliance & Monitoring
             </h2>
             
-            <div className="space-y-6 text-muted-foreground">
+            <div className="space-y-6 text-foreground">
               <div>
                 <h3 className="text-lg font-medium text-foreground mb-3">3.1 Investor Eligibility</h3>
                 <p className="mb-2">All participants must satisfy one of:</p>
@@ -160,7 +160,7 @@ const Documentation = () => {
               <div>
                 <h3 className="text-lg font-medium text-foreground mb-3">3.2 Transfer Restrictions</h3>
                 <p className="mb-2">Smart contract enforces:</p>
-                <div className="bg-muted/50 p-4 rounded text-sm space-y-2">
+                <div className="bg-muted p-4 rounded text-sm space-y-2 text-foreground">
                   <div className="flex items-start gap-2">
                     <span className="text-brand-700 font-mono w-8">R1.</span>
                     <span>12-month lock-up from issuance date</span>
@@ -205,7 +205,7 @@ const Documentation = () => {
               4. Operational Procedures
             </h2>
             
-            <div className="space-y-6 text-muted-foreground">
+            <div className="space-y-6 text-foreground">
               <div>
                 <h3 className="text-lg font-medium text-foreground mb-3">4.1 Issuance Workflow</h3>
                 <div className="space-y-3">
@@ -234,7 +234,7 @@ const Documentation = () => {
 
               <div>
                 <h3 className="text-lg font-medium text-foreground mb-3">4.2 Coupon Payment Process</h3>
-                <div className="bg-muted/50 p-4 rounded text-sm space-y-2">
+                <div className="bg-muted p-4 rounded text-sm space-y-2 text-foreground">
                   <div className="flex justify-between border-b border-border pb-2">
                     <span className="font-medium">T-5 days</span>
                     <span>System generates holder snapshot, calculates entitlements</span>
@@ -260,7 +260,7 @@ const Documentation = () => {
                   If issuer misses payment by T+3 grace period:
                 </p>
                 <div className="ml-6 space-y-2">
-                  <div>1. Contract emits <code className="bg-muted px-2 py-0.5 rounded text-xs font-mono">DefaultEvent</code></div>
+                  <div>1. Contract emits <code className="bg-muted px-2 py-0.5 rounded text-xs font-mono text-foreground">DefaultEvent</code></div>
                   <div>2. Secondary trading suspended automatically</div>
                   <div>3. Noteholders may appoint administrator per Georgian insolvency law</div>
                   <div>4. Platform provides recovery claim evidence (immutable holder registry)</div>
