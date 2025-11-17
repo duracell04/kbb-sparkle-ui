@@ -20,7 +20,7 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-            <Button size="lg" className="bg-brand-700 hover:bg-brand-800 text-white font-medium px-8" asChild>
+            <Button size="lg" variant="amber" asChild>
               <a href="/issuer-workflow">
                 Get Started
                 <ArrowRight className="w-5 h-5 ml-2" />

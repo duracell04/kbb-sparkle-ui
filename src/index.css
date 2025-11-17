@@ -4,7 +4,7 @@
 
 /* KBB Design System - Supervisory Mode
 All colors MUST be HSL. Disciplined palette for regulatory presentation.
-Primary: KBB Ink (navy), Accent: Cobalt (rare), Neutrals: Paper/Steel
+Primary: #0d232d (dark blue-green), Accent: Amber, Neutrals: Paper/Steel
 No gradients. Minimal shadows. Infrastructure aesthetics.
 */
 
@@ -12,31 +12,35 @@ No gradients. Minimal shadows. Infrastructure aesthetics.
   :root {
     /* Paper-like background for "board pack" feel */
     --background: 0 0% 96%;
-    --foreground: 222 47% 11%;
+    --foreground: 207 55% 11%;
 
     /* White surface cards */
     --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
+    --card-foreground: 207 55% 11%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
+    --popover-foreground: 207 55% 11%;
 
-    /* KBB Ink - Primary brand (navy) */
-    --primary: 198 62% 11%;
+    /* KBB Ink - Primary brand (#0d232d dark blue-green) */
+    --primary: 207 55% 11%;
     --primary-foreground: 0 0% 100%;
 
     /* Muted neutrals for surfaces */
     --secondary: 220 13% 91%;
-    --secondary-foreground: 222 47% 11%;
+    --secondary-foreground: 207 55% 11%;
 
     --muted: 0 0% 96%;
     --muted-foreground: 215 16% 47%;
 
-    /* Gold accent - for key numbers and highlights */
+    /* Amber accent - primary highlights */
     --accent: 38 92% 50%;
     --accent-foreground: 0 0% 100%;
     
-    /* Dark green - primary data color */
+    /* Amber darker - buttons and CTAs */
+    --accent-dark: 32 95% 44%;
+    --accent-dark-foreground: 0 0% 100%;
+    
+    /* Dark green - secondary data color */
     --highlight: 142 71% 24%;
     --highlight-foreground: 0 0% 100%;
 
@@ -73,16 +77,16 @@ No gradients. Minimal shadows. Infrastructure aesthetics.
   }
 
   .dark {
-    --background: 198 62% 10%;
+    --background: 207 55% 10%;
     --foreground: 210 40% 98%;
 
-    --card: 198 62% 11%;
+    --card: 207 55% 11%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 198 62% 11%;
+    --popover: 207 55% 11%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 208 62% 30%;
+    --primary: 207 55% 15%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 220 13% 20%;
@@ -93,6 +97,9 @@ No gradients. Minimal shadows. Infrastructure aesthetics.
 
     --accent: 38 92% 50%;
     --accent-foreground: 0 0% 100%;
+    
+    --accent-dark: 32 95% 44%;
+    --accent-dark-foreground: 0 0% 100%;
     
     --highlight: 142 71% 24%;
     --highlight-foreground: 0 0% 100%;

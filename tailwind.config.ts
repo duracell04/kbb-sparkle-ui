@@ -43,6 +43,7 @@ export default {
         accent: {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
+          dark: "hsl(var(--accent-dark))",
         },
         highlight: {
           DEFAULT: "hsl(var(--highlight))",
@@ -68,18 +69,28 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // Brand scale - KBB Ink navy
+        // Brand scale - KBB Ink (#0d232d dark blue-green)
         brand: {
           50: "0 0% 96%",
-          100: "210 20% 90%",
-          200: "210 20% 82%",
-          300: "210 20% 74%",
-          400: "208 40% 52%",
-          500: "208 62% 30%",
-          600: "198 62% 24%",
-          700: "198 62% 11%",
-          800: "198 62% 10%",
-          900: "198 62% 8%",
+          100: "207 45% 85%",
+          200: "207 45% 70%",
+          300: "207 45% 55%",
+          400: "207 50% 35%",
+          500: "207 52% 25%",
+          600: "207 53% 18%",
+          700: "207 55% 11%",
+          800: "207 55% 9%",
+          900: "207 55% 7%",
+        },
+        // Amber accent scale
+        amber: {
+          50: "48 96% 89%",
+          100: "48 96% 76%",
+          200: "44 97% 63%",
+          300: "38 92% 50%",
+          400: "32 95% 44%",
+          500: "26 91% 37%",
+          600: "25 95% 37%",
         },
         // Neutral scale - Paper/Steel
         neutral: {
