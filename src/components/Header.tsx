@@ -1,20 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { Github, FileText } from "lucide-react";
 import { Link } from "react-router-dom";
+import Logo from "@/components/Logo";
 
 const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-md border-b border-border shadow-sm">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-20">
-          <Link to="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 bg-brand-700 rounded flex items-center justify-center transition-transform group-hover:scale-105">
-              <span className="text-white font-semibold">KB</span>
-            </div>
-            <div>
-              <h1 className="text-lg font-semibold text-brand-700 tracking-tight">KBB</h1>
-              <p className="text-xs text-muted-foreground font-medium">Kartvelian Business Bonds</p>
-            </div>
+          <Link to="/" className="group">
+            <Logo showWordmark size="md" className="transition-opacity group-hover:opacity-80" />
           </Link>
 
           <nav className="hidden md:flex items-center gap-8">
