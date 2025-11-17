@@ -8,11 +8,11 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-primary rounded flex items-center justify-center">
+            <div className="w-8 h-8 bg-brand-700 rounded flex items-center justify-center">
               <span className="text-white font-semibold text-sm">KB</span>
             </div>
             <div>
-              <h1 className="text-lg font-medium text-foreground">KBB MVP</h1>
+              <h1 className="text-lg font-medium text-brand-700">KBB MVP</h1>
               <p className="text-xs text-muted-foreground">Kartvelian Business Bonds</p>
             </div>
           </Link>
@@ -36,7 +36,7 @@ const Header = () => {
                 <span className="hidden sm:inline">GitHub</span>
               </a>
             </Button>
-            <Button size="sm" className="bg-brand-700 hover:bg-brand-800 text-white font-medium">
+            <Button size="sm" variant="amber">
               <FileText className="w-4 h-4 mr-2" />
               <span className="hidden sm:inline">Docs</span>
             </Button>

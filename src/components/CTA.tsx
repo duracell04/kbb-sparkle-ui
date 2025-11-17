@@ -37,7 +37,7 @@ const CTA = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
             <Button
               size="lg"
-              className="bg-brand-700 hover:bg-brand-800 text-white font-medium px-8"
+              variant="amber"
               asChild
             >
               <a href="https://github.com/duracell04/KBB_MVP" target="_blank" rel="noopener noreferrer">
