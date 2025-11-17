@@ -33,10 +33,10 @@ const HowItWorks = () => {
     <section className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4 tracking-wide">
+          <h2 className="text-4xl md:text-5xl font-sans font-semibold text-foreground mb-4">
             How It Works
           </h2>
-          <p className="text-xl font-serif text-muted-foreground">
+          <p className="text-lg text-muted-foreground">
             A rail-agnostic DvP flow where cash settles on regulated infrastructure
           </p>
         </div>
@@ -45,23 +45,22 @@ const HowItWorks = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 relative">
             {steps.map((step, index) => (
               <div key={index} className="relative animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
-                <Card className="p-6 h-full bg-gradient-card border-2 border-border shadow-elevated hover:shadow-ornate transition-all duration-300 ornamental-border">
+                <Card className="p-6 h-full bg-card border border-border">
                   <div className="flex flex-col items-center text-center space-y-4">
                     <div className="relative">
-                      <div className="absolute inset-0 bg-accent/20 blur-xl rounded-full"></div>
-                      <div className="relative bg-accent/10 border-2 border-accent p-4 rounded-full">
+                      <div className="bg-accent/10 border border-accent p-4 rounded-md">
                         <step.icon className="w-8 h-8 text-accent" />
                       </div>
                     </div>
                     
                     <div className="space-y-2">
-                      <div className="inline-block px-3 py-1 bg-accent/10 text-accent text-xs font-display font-bold rounded-full">
+                      <div className="inline-block px-3 py-1 bg-accent/10 text-accent text-xs font-medium rounded-md">
                         {step.highlight}
                       </div>
-                      <h3 className="text-lg font-display font-semibold text-foreground">
+                      <h3 className="text-lg font-medium text-foreground">
                         {step.title}
                       </h3>
-                      <p className="text-sm font-serif text-muted-foreground leading-relaxed">
+                      <p className="text-sm text-muted-foreground leading-relaxed">
                         {step.description}
                       </p>
                     </div>
@@ -77,8 +76,8 @@ const HowItWorks = () => {
             ))}
           </div>
 
-          <div className="mt-16 p-8 bg-secondary/50 border border-border rounded-lg">
-            <h4 className="text-lg font-semibold text-foreground mb-4 flex items-center gap-2">
+          <div className="mt-16 p-8 bg-secondary/50 border border-border rounded-md">
+            <h4 className="text-lg font-medium text-foreground mb-4 flex items-center gap-2">
               <FileText className="w-5 h-5 text-accent" />
               Event Schema (Rail-Agnostic)
             </h4>
