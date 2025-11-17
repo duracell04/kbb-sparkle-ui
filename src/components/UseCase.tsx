@@ -12,7 +12,7 @@ const UseCase = () => {
                 Use Case: Georgian SMEs
               </div>
               
-              <h2 className="text-4xl md:text-5xl font-sans font-semibold text-foreground">
+              <h2 className="text-4xl md:text-5xl font-sans font-semibold text-primary">
                 The KBB Story
               </h2>
               

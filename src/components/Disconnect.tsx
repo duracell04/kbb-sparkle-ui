@@ -6,7 +6,7 @@ const Disconnect = () => {
     <section className="py-24 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-12 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-sans font-semibold text-foreground mb-6">
+          <h2 className="text-4xl md:text-5xl font-sans font-semibold text-primary mb-6">
             The Disconnect
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">

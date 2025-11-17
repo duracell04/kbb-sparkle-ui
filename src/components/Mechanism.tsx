@@ -6,7 +6,7 @@ const Mechanism = () => {
     <section className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-sans font-semibold text-foreground mb-4">
+          <h2 className="text-4xl md:text-5xl font-sans font-semibold text-primary mb-4">
             The Mechanism
           </h2>
           <p className="text-lg text-muted-foreground">

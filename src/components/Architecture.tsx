@@ -6,7 +6,7 @@ const Architecture = () => {
     <section className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-sans font-semibold text-foreground mb-4">
+          <h2 className="text-4xl md:text-5xl font-sans font-semibold text-primary mb-4">
             Architecture at a Glance
           </h2>
           <p className="text-lg text-muted-foreground">
@@ -25,7 +25,7 @@ const Architecture = () => {
             </Card>
 
             <Card className="p-6 bg-card border border-border text-center">
-              <Shield className="w-12 h-12 text-success mx-auto mb-4" />
+              <Shield className="w-12 h-12 text-primary mx-auto mb-4" />
               <h3 className="font-medium text-foreground mb-2">Settlement Adapter</h3>
               <p className="text-sm text-muted-foreground">
                 Verify and attest settlement evidence
@@ -41,7 +41,7 @@ const Architecture = () => {
             </Card>
 
             <Card className="p-6 bg-card border border-border text-center">
-              <FileText className="w-12 h-12 text-success mx-auto mb-4" />
+              <FileText className="w-12 h-12 text-primary mx-auto mb-4" />
               <h3 className="font-medium text-foreground mb-2">FixedIncomeNote</h3>
               <p className="text-sm text-muted-foreground">
                 Permissioned token with lifecycle events
@@ -75,8 +75,8 @@ const Architecture = () => {
                 </div>
 
                 <div className="flex flex-col items-center text-center space-y-2 flex-1">
-                  <div className="w-16 h-16 rounded-full bg-success/10 border-2 border-success flex items-center justify-center">
-                    <Database className="w-8 h-8 text-success" />
+                  <div className="w-16 h-16 rounded-full bg-primary/10 border-2 border-primary flex items-center justify-center">
+                    <Database className="w-8 h-8 text-primary" />
                   </div>
                   <p className="text-sm font-medium text-foreground">Escrow</p>
                   <p className="text-xs text-muted-foreground">Regulated Rail</p>
@@ -85,7 +85,7 @@ const Architecture = () => {
                 <div className="flex items-center">
                   <div className="w-px h-12 md:w-12 md:h-px bg-border"></div>
                   <div className="absolute left-1/2 transform -translate-x-1/2 md:relative md:left-0 md:transform-none">
-                    <div className="bg-success text-success-foreground px-3 py-1 rounded text-xs font-medium whitespace-nowrap">
+                    <div className="bg-accent text-accent-foreground px-3 py-1 rounded text-xs font-medium whitespace-nowrap">
                       Verify
                     </div>
                   </div>

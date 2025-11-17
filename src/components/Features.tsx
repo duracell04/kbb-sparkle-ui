@@ -13,7 +13,7 @@ const Features = () => {
       icon: Database,
       title: "Audit-Ready",
       description: "Register events store bank references (ISO 20022 identifiers) for one-to-one matching with settlement evidence.",
-      color: "text-success",
+      color: "text-primary",
     },
     {
       icon: Lock,
@@ -25,7 +25,7 @@ const Features = () => {
       icon: Scale,
       title: "CSD-Aligned",
       description: "Legal title remains in the Central Securities Depository (Phase-1). Token mirrors the official record.",
-      color: "text-success",
+      color: "text-primary",
     },
     {
       icon: Globe,
@@ -37,7 +37,7 @@ const Features = () => {
       icon: Zap,
       title: "Regulated Rails",
       description: "Cash settles on licensed banks or approved payment systems. SWIFT, SEPA, ACH, or permitted stablecoins.",
-      color: "text-success",
+      color: "text-primary",
     },
   ];
 
