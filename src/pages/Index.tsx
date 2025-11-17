@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Disconnect from "@/components/Disconnect";
+import InkSection from "@/components/InkSection";
 import Features from "@/components/Features";
 import HowItWorks from "@/components/HowItWorks";
 import Mechanism from "@/components/Mechanism";
@@ -16,6 +17,7 @@ const Index = () => {
       <main className="pt-20">
         <Hero />
         <Disconnect />
+        <InkSection />
         <div id="features">
           <Features />
         </div>
