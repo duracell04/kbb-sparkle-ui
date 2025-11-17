@@ -10,13 +10,14 @@ const Hero = () => {
             <Shield className="w-4 h-4" />
             Kartvelian Business Bonds
           </div>
-          
+
           <h1 className="text-5xl md:text-6xl font-sans font-semibold text-brand-700 leading-tight">
-            KBB – Token-registered, bank-settled private debt for supervised investors
+            Token-registered, bank-settled private debt for supervised investors
           </h1>
-          
+
           <p className="text-lg md:text-xl text-neutral-700 max-w-3xl mx-auto leading-relaxed">
-            Bridging Georgian businesses with global capital using blockchain rails. Not replacing existing systems — building where they can't reach.
+            Bridging Georgian businesses with global capital using blockchain rails. Not replacing existing systems —
+            building where they can't reach.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
@@ -34,23 +35,17 @@ const Hero = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-12">
             <div className="text-center">
               <div className="text-5xl font-bold text-success mb-2 tabular-nums">$50B+</div>
-              <p className="text-muted-foreground text-base">
-                Global capital seeking emerging market yields
-              </p>
+              <p className="text-muted-foreground text-base">Global capital seeking emerging market yields</p>
             </div>
-            
+
             <div className="text-center">
               <div className="text-5xl font-bold text-accent mb-2 tabular-nums">500+</div>
-              <p className="text-muted-foreground text-base">
-                Georgian SMEs needing growth capital
-              </p>
+              <p className="text-muted-foreground text-base">Georgian SMEs needing growth capital</p>
             </div>
-            
+
             <div className="text-center">
               <div className="text-5xl font-bold text-success mb-2 tabular-nums">15-20%</div>
-              <p className="text-muted-foreground text-base">
-                Returns in high-growth economies like Georgia
-              </p>
+              <p className="text-muted-foreground text-base">Returns in high-growth economies like Georgia</p>
             </div>
           </div>
         </div>
